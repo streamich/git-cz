@@ -1,0 +1,16 @@
+{
+  "name": "mol-conventional-changelog",
+  "version": "1.0.0",
+  "description": "MOL Commitizen adapter following the conventional-changelog format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "author": "MailOnline <fe@mailonline.co.uk>",
+  "homepage": "https://github.com/MailOnline/mol-conventional-changelog",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MailOnline/mol-conventional-changelog.git"
+  },
+  "license": "UNLICENSED"
+}

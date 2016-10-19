@@ -1,0 +1,8 @@
+{
+ "preset": "airbnb",
+
+ "requireTrailingComma": false,
+ "maximumLineLength": 200,
+ "disallowMultipleVarDecl": false,
+ "safeContextKeyword": ["_this"]
+}
