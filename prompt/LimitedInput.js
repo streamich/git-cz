@@ -22,11 +22,7 @@ function LimitedInput() {
 
   this.leadingLength = this.leadingLabel.length;
   this.updateMessage();
-
-  console.log(this.leadingLength)
 }
-
-
 
 util.inherits(LimitedInput, inquirer.prompt.prompts.input);
 
