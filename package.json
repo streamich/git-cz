@@ -12,5 +12,8 @@
     "type": "git",
     "url": "git@github.com:MailOnline/mol-conventional-changelog.git"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "inquirer": "^1.2.2"
+  }
 }
