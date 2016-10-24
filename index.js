@@ -79,7 +79,7 @@ module.exports = {
         width: MAX_LINE_WIDTH
       };
 
-      const head = (answers.type + ': ' + answers.subject.trim());
+      const head = (answers.type + ': ' + answers.subject.trim()).toLowerCase();
 
       // Wrap these lines at MAX_LINE_WIDTH characters
       const body = wrap(answers.body, wrapOptions);
