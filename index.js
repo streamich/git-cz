@@ -64,15 +64,15 @@ module.exports = {
       {
         type: 'input',
         name: 'breaking',
-        message: 'List any breaking changes:\n'
+        message: 'List any breaking changes:\nBREAKING CHANGE: '
       },
       {
         type: 'input',
         name: 'footer',
-        message: 'Reference any task that this commit closes:\n'
+        message: 'Reference any task that this commit closes:\nIssues: '
       }
     ])
-    .then(function (answers) {
+    .then((answers) => {
       const wrapOptions = {
         trim: true,
         indent: '',
@@ -104,4 +104,3 @@ module.exports = {
     });
   }
 }
-
