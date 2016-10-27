@@ -2,11 +2,5 @@
 *.swp
 .DS_Store
 .idea/
-.scripts/
-.vagrant/
-bin/
-bower_components/
-coverage/
-dev/
 node_modules/
-config/databag.json
+npm-debug.log

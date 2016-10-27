@@ -1,0 +1,10 @@
+language: node_js
+install:
+  - npm install
+script:
+  - npm run lint
+after_success:
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/

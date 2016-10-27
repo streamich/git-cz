@@ -1,10 +1,13 @@
 {
   "name": "mol-conventional-changelog",
-  "version": "1.0.0",
+  "version": "0.0.0-semantically-released",
   "description": "MOL Commitizen adapter following the conventional-changelog format",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "lint": "eslint {prompt/**,.}/*.js",
+    "precommit": "npm run lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "author": "MailOnline <fe@mailonline.co.uk>",
   "homepage": "https://github.com/MailOnline/mol-conventional-changelog",
@@ -18,7 +21,11 @@
     "word-wrap": "^1.1.0"
   },
   "devDependencies": {
-    "commitizen": ">=2.8.0 <2.8.3"
+    "commitizen": ">=2.8.0 <2.8.3",
+    "eslint": "^3.8.1",
+    "eslint-config-mailonline": "^2.0.0",
+    "husky": "^0.11.9",
+    "semantic-release": "^4.3.5"
   },
   "config": {
     "commitizen": {

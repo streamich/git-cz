@@ -1,0 +1,9 @@
+{
+  "extends": "mailonline",
+  "rules": {
+    "import/unambiguous": "off",
+    "import/no-commonjs": "off",
+    "promise/prefer-await-to-then": "off",
+    "strict": "off"
+  }
+}
