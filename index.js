@@ -6,6 +6,8 @@ inquirer.registerPrompt('limitedInput', require('./prompt/LimitedInput'));
 
 const MAX_SUBJECT_LENGTH = 50;
 const MAX_LINE_WIDTH = 72;
+const MIN_SUBJECT_LENGTH = 3;
+const MIN_SUBJECT_LENGTH_ERROR_MESSAGE = `The subject must have at least ${MIN_SUBJECT_LENGTH} characters`;
 
 module.exports = {
   prompter: (cz, commit) => {
@@ -53,6 +55,11 @@ module.exports = {
         type: 'limitedInput',
         name: 'subject',
         maxLength: MAX_SUBJECT_LENGTH,
+        filter: (input) => {
+          const subject = input.trim();
+          return subject.endsWith('.') ? subject.substr(0, subject.length - 1).trim() : subject;
+        },
+        validate: (input) => input.length >= MIN_SUBJECT_LENGTH || MIN_SUBJECT_LENGTH_ERROR_MESSAGE,
         leadingLabel: (answers) => `${answers.type}:`,
         message: 'Write a short, imperative mood description of the change:'
       },
@@ -64,12 +71,12 @@ module.exports = {
       {
         type: 'input',
         name: 'breaking',
-        message: 'List any breaking changes:\nBREAKING CHANGE: '
+        message: 'List any breaking changes:\n BREAKING CHANGE:'
       },
       {
         type: 'input',
         name: 'footer',
-        message: 'Reference any task that this commit closes:\nIssues: '
+        message: 'Reference any task that this commit closes:\n Issues:'
       }
     ])
     .then((answers) => {
@@ -79,7 +86,7 @@ module.exports = {
         width: MAX_LINE_WIDTH
       };
 
-      const head = (answers.type + ': ' + answers.subject.trim()).toLowerCase();
+      const head = answers.type + ': ' + answers.subject;
 
       // Wrap these lines at MAX_LINE_WIDTH characters
       const body = wrap(answers.body, wrapOptions);

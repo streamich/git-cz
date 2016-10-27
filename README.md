@@ -65,6 +65,7 @@ Issues: MOL-1234
 The **header** is the only mandatory part of the commit message.
 
 The first line (type + subject) is limited to 50 characters **[enforced]**
+
 Any other line should be limited to 72 character **[automatic wrapping]**
 
 This allows the message to be easier to read on GitHub as well as in various git tools.
@@ -87,7 +88,6 @@ Must be one of the following:
 The subject contains succinct description of the change:
 
 * Use the imperative, present tense: "change" not "changed" nor "changes"
-* Lowercase only **[automatic fix]**
 * No dot (.) at the end.
 
 ### Body
