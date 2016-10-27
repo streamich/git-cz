@@ -17,10 +17,10 @@ Install the `mol-conventional-changelog` package.
 npm install --save-dev mol-conventional-changelog
 ```
 
-Init committizen configuration
+Init commitizen configuration
 
 ```
-commitizen init rb-conventional-changelog --save-dev --save-exact
+commitizen init mol-conventional-changelog --save-dev --save-exact
 ```
 
 ## Usage
