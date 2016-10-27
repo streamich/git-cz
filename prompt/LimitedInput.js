@@ -1,13 +1,13 @@
-const inquirer = require('inquirer');
 const util = require('util');
+const inquirer = require('inquirer');
 
-function LimitedInput() {
-  inquirer.prompt.prompts.input.apply(this, arguments);
+const LimitedInput = function (...args) {
+  inquirer.prompt.prompts.input.apply(this, args);
 
   if (!this.opt.maxLength) {
     this.throwParamError('maxLength');
   }
-  this.opt._message = this.opt.message;
+  this.originalMeassage = this.opt.message;
   this.spacer = new Array(this.opt.maxLength).fill('-').join('');
 
   if (this.opt.leadingLabel) {
@@ -22,22 +22,22 @@ function LimitedInput() {
 
   this.leadingLength = this.leadingLabel.length;
   this.updateMessage();
-}
+};
 
 util.inherits(LimitedInput, inquirer.prompt.prompts.input);
 
-LimitedInput.prototype.updateMessage = function(e) {
-  this.opt.message = `${this.opt._message}
+LimitedInput.prototype.updateMessage = function () {
+  this.opt.message = `${this.originalMeassage}
 [${this.spacer}] ${this.remainingChar()} remaining chars
 ${this.leadingLabel}`;
 };
 
-LimitedInput.prototype.remainingChar = function(e) {
-  return (this.opt.maxLength - this.leadingLength) - this.rl.line.length;
+LimitedInput.prototype.remainingChar = function () {
+  return this.opt.maxLength - this.leadingLength - this.rl.line.length;
 };
 
-LimitedInput.prototype.onKeypress = function(e) {
-  if(this.rl.line.length > (this.opt.maxLength - this.leadingLength)) {
+LimitedInput.prototype.onKeypress = function () {
+  if (this.rl.line.length > this.opt.maxLength - this.leadingLength) {
     this.rl.line = this.rl.line.slice(0, this.opt.maxLength - this.leadingLength);
     this.rl.cursor--;
   }
