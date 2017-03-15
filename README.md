@@ -5,10 +5,10 @@
 
 ## Setup
 
-Install commitizen version 2.8.2
+Install commitizen
 
 ```
-npm install -g commitizen@2.8.2
+npm install -g commitizen
 ```
 
 Install the `mol-conventional-changelog` package.
