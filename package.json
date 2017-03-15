@@ -17,15 +17,15 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "inquirer": "^1.2.2",
-    "word-wrap": "^1.1.0"
+    "inquirer": "^3.0.6",
+    "word-wrap": "^1.2.0"
   },
   "devDependencies": {
     "commitizen": "^2.9.6",
-    "eslint": "^3.8.1",
-    "eslint-config-mailonline": "^2.0.0",
-    "husky": "^0.11.9",
-    "semantic-release": "^4.3.5"
+    "eslint": "^3.17.1",
+    "eslint-config-mailonline": "^6.0.0",
+    "husky": "^0.13.2",
+    "semantic-release": "^6.3.2"
   },
   "config": {
     "commitizen": {
