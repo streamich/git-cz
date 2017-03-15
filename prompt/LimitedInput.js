@@ -7,7 +7,7 @@ const LimitedInput = function (...args) {
   if (!this.opt.maxLength) {
     this.throwParamError('maxLength');
   }
-  this.originalMeassage = this.opt.message;
+  this.originalMessage = this.opt.message;
   this.spacer = new Array(this.opt.maxLength).fill('-').join('');
 
   if (this.opt.leadingLabel) {
@@ -27,7 +27,7 @@ const LimitedInput = function (...args) {
 util.inherits(LimitedInput, inquirer.prompt.prompts.input);
 
 LimitedInput.prototype.updateMessage = function () {
-  this.opt.message = `${this.originalMeassage}
+  this.opt.message = `${this.originalMessage}
 [${this.spacer}] ${this.remainingChar()} remaining chars
 ${this.leadingLabel}`;
 };
