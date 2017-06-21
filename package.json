@@ -17,15 +17,23 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "inquirer": "^3.0.6",
-    "word-wrap": "^1.2.0"
+    "app-root-path": "^2.0.1",
+    "inquirer": "^3.1.1",
+    "shelljs": "^0.7.8",
+    "word-wrap": "^1.2.3"
+  },
+  "optionalDependencies": {
+    "lerna": "^2.0.0-rc.5"
+  },
+  "peerDependencies": {
+    "lerna": "^2.0.0-rc.5"
   },
   "devDependencies": {
-    "commitizen": "^2.9.6",
-    "eslint": "^3.17.1",
-    "eslint-config-mailonline": "^6.0.0",
-    "husky": "^0.13.2",
-    "semantic-release": "^6.3.2"
+    "commitizen": "^2.9.5",
+    "eslint": "^3.19.0",
+    "eslint-config-mailonline": "^6.1.0",
+    "husky": "^0.13.4",
+    "lerna": "^2.0.0-rc.5"
   },
   "config": {
     "commitizen": {
