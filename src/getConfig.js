@@ -1,6 +1,7 @@
 /* eslint-disable global-require, import/no-dynamic-require */
 const path = require('path');
 const defaults = require('./defaults');
+const signale = require('signale');
 
 const configFiles = [
   'changelog.config.js',
@@ -18,7 +19,7 @@ const findOverrides = () => {
   }
 
   try {
-    const {changelog} = require(path.join(dir, 'package.json'));
+    const changelog = require(path.join(dir, 'package.json')).config.commitizen.changelog;
 
     if (changelog) {
       return changelog;
@@ -33,7 +34,7 @@ const getConfig = () => {
   const overrides = findOverrides();
 
   if (typeof overrides !== 'object') {
-    console.log(new TypeError('Expected changelog config to be an object.'));
+    signale.fatal(new TypeError('Expected changelog config to be an object.'));
 
     // eslint-disable-next-line no-process-exit
     process.exit(1);
