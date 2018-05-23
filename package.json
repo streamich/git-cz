@@ -40,7 +40,19 @@
   },
   "config": {
     "commitizen": {
-      "path": "./index.js"
+      "path": "./index.js",
+      "changelog": {
+        "maxMessageLength": 72,
+        "list": [
+          "feat",
+          "fix",
+          "chore",
+          "docs",
+          "refactor",
+          "style",
+          "ci"
+        ]
+      }
     }
   }
 }
