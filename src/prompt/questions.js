@@ -1,3 +1,5 @@
+const types = require('../types').types;
+
 const MAX_SUBJECT_LENGTH = 64;
 const MIN_SUBJECT_LENGTH = 3;
 const MIN_SUBJECT_LENGTH_ERROR_MESSAGE = `The subject must have at least ${MIN_SUBJECT_LENGTH} characters`;
@@ -5,42 +7,15 @@ const MIN_SUBJECT_LENGTH_ERROR_MESSAGE = `The subject must have at least ${MIN_S
 const questions = [
   {
     choices: [
-      {
-        name: 'feat:     A new feature',
-        value: 'feat'
-      },
-      {
-        name: 'fix:      A bug fix',
-        value: 'fix'
-      },
-      {
-        name: 'docs:     Documentation only changes',
-        value: 'docs'
-      },
-      {
-        name: 'style:    Markup-only changes (white-space, formatting, missing semi-colons, etc)',
-        value: 'style'
-      },
-      {
-        name: 'refactor: A code change that neither fixes a bug or adds a feature',
-        value: 'refactor'
-      },
-      {
-        name: 'perf:     A code change that improves performance',
-        value: 'perf'
-      },
-      {
-        name: 'test:     Adding missing tests',
-        value: 'test'
-      },
-      {
-        name: 'chore:    Build process or auxiliary tool changes',
-        value: 'chore'
-      },
-      {
-        name: 'ci:       CI related changes',
-        value: 'ci'
-      }
+      types.test,
+      types.feat,
+      types.fix,
+      types.chore,
+      types.docs,
+      types.refactor,
+      types.style,
+      types.ci,
+      types.perf
     ],
     message: 'Select the type of change that you\'re committing:',
     name: 'type',

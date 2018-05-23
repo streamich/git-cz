@@ -28,6 +28,10 @@ const makeAffectsLine = function (answers) {
   return '';
 };
 
+const emojis = {
+  style: '💄'
+};
+
 module.exports = {
   prompter (cz, commit) {
     let promptQuestions = questions;
@@ -47,7 +51,8 @@ module.exports = {
           width: MAX_LINE_WIDTH
         };
 
-        const head = answers.type + ': ' + answers.subject;
+        const emojiPrefix = emojis[answers.type] ? emojis[answers.type] + ' ' : '';
+        const head = answers.type + ': ' + emojiPrefix + answers.subject;
         const affectsLine = makeAffectsLine(answers);
 
         // Wrap these lines at MAX_LINE_WIDTH character
