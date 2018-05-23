@@ -1,4 +1,4 @@
-exports.types = {
+const types = {
   chore: {
     description: 'Build process or auxiliary tool changes',
     emoji: '👻',
@@ -44,4 +44,23 @@ exports.types = {
     emoji: '💍',
     value: 'test'
   }
+};
+
+const list = [
+  'test',
+  'feat',
+  'fix',
+  'chore',
+  'docs',
+  'refactor',
+  'style',
+  'ci',
+  'perf'
+];
+
+module.exports = {
+  list,
+  maxMessageLength: 64,
+  minMessageLength: 3,
+  types
 };

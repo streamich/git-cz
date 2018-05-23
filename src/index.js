@@ -2,7 +2,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const wrap = require('word-wrap');
 const appRoot = require('app-root-path');
-const types = require('./types').types;
+const defaults = require('./defaults');
 const {
   makePackagesQuestion,
   questions
@@ -48,7 +48,7 @@ module.exports = {
           width: MAX_LINE_WIDTH
         };
 
-        const emoji = types[answers.type].ejomi;
+        const emoji = defaults.types[answers.type].emoji;
         const emojiPrefix = emoji ? emoji + ' ' : '';
         const head = answers.type + ': ' + emojiPrefix + answers.subject;
         const affectsLine = makeAffectsLine(answers);

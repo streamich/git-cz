@@ -1,8 +1,8 @@
 const pad = require('pad-right');
-const types = require('../types').types;
+const defaults = require('../defaults');
 
-const MAX_SUBJECT_LENGTH = 64;
-const MIN_SUBJECT_LENGTH = 3;
+const MAX_SUBJECT_LENGTH = defaults.maxMessageLength;
+const MIN_SUBJECT_LENGTH = defaults.minMessageLength;
 const MIN_SUBJECT_LENGTH_ERROR_MESSAGE = `The subject must have at least ${MIN_SUBJECT_LENGTH} characters`;
 
 const typeToListItem = ({description, emoji, value}) => ({
@@ -12,17 +12,7 @@ const typeToListItem = ({description, emoji, value}) => ({
 
 const questions = [
   {
-    choices: [
-      typeToListItem(types.test),
-      typeToListItem(types.feat),
-      typeToListItem(types.fix),
-      typeToListItem(types.chore),
-      typeToListItem(types.docs),
-      typeToListItem(types.refactor),
-      typeToListItem(types.style),
-      typeToListItem(types.ci),
-      typeToListItem(types.perf)
-    ],
+    choices: defaults.list.map((type) => typeToListItem(defaults.types[type])),
     message: 'Select the type of change that you\'re committing:',
     name: 'type',
     type: 'list'
