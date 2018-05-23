@@ -60,7 +60,7 @@ const list = [
 
 module.exports = {
   list,
-  maxMessageLength: 64,
+  maxMessageLength: 50,
   minMessageLength: 3,
   types
 };

@@ -29,7 +29,9 @@ const questions = [
       return subject;
     },
     leadingLabel: (answers) => `${answers.type}:`,
-    maxLength: MAX_SUBJECT_LENGTH,
+
+    // Minus 3 chars are for emoji + space.
+    maxLength: MAX_SUBJECT_LENGTH - 3,
     message: 'Write a short, imperative mood description of the change:',
     name: 'subject',
     type: 'limitedInput',
