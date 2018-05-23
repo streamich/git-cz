@@ -1,4 +1,4 @@
 const createPrompter = require('./createPrompter');
-const config = require('./defaults');
+const getConfig = require('./getConfig');
 
-module.exports = createPrompter(config);
+module.exports = createPrompter(getConfig());
