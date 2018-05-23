@@ -6,7 +6,7 @@ const MIN_SUBJECT_LENGTH = 3;
 const MIN_SUBJECT_LENGTH_ERROR_MESSAGE = `The subject must have at least ${MIN_SUBJECT_LENGTH} characters`;
 
 const typeToListItem = ({description, emoji, value}) => ({
-  name: (emoji || '❔') + ' ' + pad(value + ':', 12, ' ') + description,
+  name: (emoji || '❔') + '  ' + pad(value + ':', 12, ' ') + description,
   value
 });
 

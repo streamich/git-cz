@@ -2,6 +2,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const wrap = require('word-wrap');
 const appRoot = require('app-root-path');
+const types = require('./types').types;
 const {
   makePackagesQuestion,
   questions
@@ -28,10 +29,6 @@ const makeAffectsLine = function (answers) {
   return '';
 };
 
-const emojis = {
-  style: '💄'
-};
-
 module.exports = {
   prompter (cz, commit) {
     let promptQuestions = questions;
@@ -51,7 +48,8 @@ module.exports = {
           width: MAX_LINE_WIDTH
         };
 
-        const emojiPrefix = emojis[answers.type] ? emojis[answers.type] + ' ' : '';
+        const emoji = types[answers.type].ejomi;
+        const emojiPrefix = emoji ? emoji + ' ' : '';
         const head = answers.type + ': ' + emojiPrefix + answers.subject;
         const affectsLine = makeAffectsLine(answers);
 
