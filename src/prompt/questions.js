@@ -1,4 +1,4 @@
-const MAX_SUBJECT_LENGTH = 50;
+const MAX_SUBJECT_LENGTH = 64;
 const MIN_SUBJECT_LENGTH = 3;
 const MIN_SUBJECT_LENGTH_ERROR_MESSAGE = `The subject must have at least ${MIN_SUBJECT_LENGTH} characters`;
 
@@ -18,7 +18,7 @@ const questions = [
         value: 'docs'
       },
       {
-        name: 'style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)',
+        name: 'style:    Markup-only changes (white-space, formatting, missing semi-colons, etc)',
         value: 'style'
       },
       {
@@ -34,8 +34,12 @@ const questions = [
         value: 'test'
       },
       {
-        name: 'chore:    Changes to the build process or auxiliary tools\n            and libraries such as documentation generation',
+        name: 'chore:    Build process or auxiliary tool changes',
         value: 'chore'
+      },
+      {
+        name: 'ci:       CI related changes',
+        value: 'ci'
       }
     ],
     message: 'Select the type of change that you\'re committing:',
