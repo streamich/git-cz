@@ -1,17 +1,17 @@
 const types = {
   chore: {
     description: 'Build process or auxiliary tool changes',
-    emoji: '👻',
+    emoji: '🚜',
     value: 'chore'
   },
   ci: {
     description: 'CI related changes',
-    emoji: '🤖',
+    emoji: '🎡',
     value: 'ci'
   },
   docs: {
     description: 'Documentation only changes',
-    emoji: '✍️',
+    emoji: '✏️',
     value: 'docs'
   },
   feat: {
@@ -21,7 +21,7 @@ const types = {
   },
   fix: {
     description: 'A bug fix',
-    emoji: '🐛',
+    emoji: '🐞',
     value: 'fix'
   },
   perf: {
@@ -31,7 +31,7 @@ const types = {
   },
   refactor: {
     description: 'A code change that neither fixes a bug or adds a feature',
-    emoji: '👌',
+    emoji: '💡',
     value: 'refactor'
   },
   style: {
