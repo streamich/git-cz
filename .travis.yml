@@ -4,6 +4,8 @@ install:
 script:
   - npm run lint
 after_success:
+  - npx ci-scripts slack
+  - npx ci-scripts github-post
   - npm run semantic-release
 branches:
   except:
