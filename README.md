@@ -6,19 +6,19 @@
 
 Install commitizen
 
-```
+```shell
 npm install -g commitizen
 ```
 
 Install the `mol-conventional-changelog` package.
 
-```
+```shell
 npm install --save-dev mol-conventional-changelog
 ```
 
 Init commitizen configuration
 
-```
+```shell
 commitizen init mol-conventional-changelog --save-dev --save-exact
 ```
 
@@ -28,25 +28,32 @@ commitizen init mol-conventional-changelog --save-dev --save-exact
 git cz
 ```
 
-#### Examples
+## Examples
 
 ```
-feat: add 'graphiteWidth' option
-```
-
-```
-fix: stop graphite breaking when width < 0.1
+feat: 🎸 add 'graphiteWidth' option
 ```
 
 ```
-perf: remove graphiteWidth option
+fix: 🐞 stop graphite breaking when width < 0.1
+```
+
+```
+perf: ⚡️ remove graphiteWidth option
 
 BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite width of 10mm is always used for performance reason.
 
 Issues: MOL-1234
 ```
 
-### Commit Message Format
+
+## Custom config
+
+You can provide custom configuration in `changelog.congfig.js` file
+in your repo. See [default configuration file](./src/defaults.js) for reference.
+
+
+## Commit Message Format
 
 * A commit message consists of a **header**, **body** and **footer**.
 * The header has a **type** and a **subject**:
@@ -76,11 +83,12 @@ Must be one of the following:
 * `feat`: A new feature.
 * `fix`: A bug fix.
 * `docs`: Documentation only changes.
-* `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).
+* `style`: Markup-only changes (white-space, formatting, missing semi-colons, etc).
 * `refactor`: A code change that neither fixes a bug or adds a feature.
 * `perf`: A code change that improves performance.
 * `test`: Adding or updating tests.
-* `chore`: Changes to the build process or auxiliary tools and libraries such as documentation generation and linters.
+* `chore`: Build process or auxiliary tool changes.
+* `ci`: CI related changes.
 
 ### Subject
 
