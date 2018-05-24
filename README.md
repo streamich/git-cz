@@ -35,11 +35,11 @@ feat: 🎸 add 'graphiteWidth' option
 ```
 
 ```
-fix: 🐛 stop graphite breaking when width < 0.1
+fix: 🐞 stop graphite breaking when width < 0.1
 ```
 
 ```
-perf: 🔥 remove graphiteWidth option
+perf: ⚡️ remove graphiteWidth option
 
 BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite width of 10mm is always used for performance reason.
 
@@ -47,9 +47,9 @@ Issues: MOL-1234
 ```
 
 
-## Custmo config
+## Custom config
 
-You can privide custom configuration in `changelog.congfig.js` file
+You can provide custom configuration in `changelog.congfig.js` file
 in your repo. See [default configuration file](./src/defaults.js) for reference.
 
 

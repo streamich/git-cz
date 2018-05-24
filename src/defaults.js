@@ -26,7 +26,7 @@ const types = {
   },
   perf: {
     description: 'A code change that improves performance',
-    emoji: '🔥',
+    emoji: '⚡️',
     value: 'perf'
   },
   refactor: {
