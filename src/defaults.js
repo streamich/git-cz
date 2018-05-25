@@ -21,7 +21,7 @@ const types = {
   },
   fix: {
     description: 'A bug fix',
-    emoji: '🐞',
+    emoji: '🐜',
     value: 'fix'
   },
   perf: {
