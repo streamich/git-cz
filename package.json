@@ -36,7 +36,7 @@
     "eslint-config-mailonline": "^9.0.0",
     "husky": "^0.14.3",
     "lerna": "^2.0.0-rc.5",
-    "semantic-release": "^15.5.0"
+    "semantic-release": "^6.3.6"
   },
   "config": {
     "commitizen": {
