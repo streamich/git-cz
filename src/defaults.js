@@ -1,7 +1,7 @@
 const types = {
   chore: {
     description: 'Build process or auxiliary tool changes',
-    emoji: '🚜',
+    emoji: '🤖',
     value: 'chore'
   },
   ci: {
