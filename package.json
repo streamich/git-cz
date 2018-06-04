@@ -4,7 +4,8 @@
   "description": "Semantic emojified git commit",
   "main": "lib/index.js",
   "bin": {
-    "ci": "./bin/git-cz.js"
+    "git-cz": "./bin/git-cz.js",
+    "gitcz": "./bin/git-cz.js"
   },
   "repository": {
     "type": "git",
@@ -28,19 +29,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./index.js",
-      "changelog": {
-        "maxMessageLength": 72,
-        "list": [
-          "feat",
-          "fix",
-          "chore",
-          "docs",
-          "refactor",
-          "style",
-          "ci"
-        ]
-      }
+      "path": "./index.js"
     }
   }
 }
