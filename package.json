@@ -15,7 +15,7 @@
   "license": "Unlicense",
   "dependencies": {
     "app-root-path": "^2.0.1",
-    "inquirer": "^3.1.1",
+    "inquirer": "^6.0.0",
     "word-wrap": "^1.2.3",
     "pad-right": "^0.2.2",
     "signale": "^1.1.0",
