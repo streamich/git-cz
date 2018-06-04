@@ -46,6 +46,7 @@ const types = {
   }
 };
 
+// https://github.com/angular/angular/blob/master/CONTRIBUTING.md#type
 const list = [
   'test',
   'feat',
@@ -56,6 +57,17 @@ const list = [
   'style',
   'ci',
   'perf'
+];
+
+// https://github.com/angular/angular/blob/master/CONTRIBUTING.md#scope
+const scopes = [
+  null,
+  'init',
+  'runner',
+  'watcher',
+  'config',
+  'web-server',
+  'changelog'
 ];
 
 module.exports = {
