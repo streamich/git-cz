@@ -19,7 +19,8 @@
     "word-wrap": "^1.2.3",
     "pad-right": "^0.2.2",
     "signale": "^1.1.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "chalk": "^2.4.1"
   },
   "devDependencies": {
     "commitizen": "^2.9.6",
