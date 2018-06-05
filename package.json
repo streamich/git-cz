@@ -1,7 +1,7 @@
 {
   "name": "git-cz",
   "version": "0.1.0",
-  "description": "Semantic emojified git commit",
+  "description": "Semantic emojified git commit, git-cz",
   "main": "lib/index.js",
   "bin": {
     "git-cz": "./bin/git-cz.js",
@@ -13,6 +13,13 @@
   },
   "homepage": "https://github.com/streamich/git-cz",
   "license": "Unlicense",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "eslint": "eslint lib/*.js",
+    "precommit": "yarn lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "lint": "yarn eslint"
+  },
   "dependencies": {
     "app-root-path": "^2.0.1",
     "inquirer": "^6.0.0",
