@@ -1,0 +1,3 @@
+describe('commitizen', () => {
+  it('works');
+});

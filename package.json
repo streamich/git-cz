@@ -14,7 +14,7 @@
   "homepage": "https://github.com/streamich/git-cz",
   "license": "Unlicense",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0",
+    "test": "mocha",
     "clean": "rimraf dist",
     "build": "yarn build:cli && yarn build:cz",
     "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
@@ -25,7 +25,7 @@
     "lint": "yarn eslint"
   },
   "devDependencies": {
-    "app-root-path": "^2.0.1",
+    "mocha": "^5.2.0",
     "inquirer": "^6.0.0",
     "word-wrap": "^1.2.3",
     "pad-right": "^0.2.2",
