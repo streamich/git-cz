@@ -5,7 +5,7 @@
 .idea/
 node_modules/
 npm-debug.log
-yarn.lock
 .vscode/
 yarn-error.log
 dist/
+package-lock.json
