@@ -1,1 +1,1 @@
-module.exports = require('./lib/cz');
+module.exports = require('./dist/cz');

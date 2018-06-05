@@ -18,7 +18,7 @@
     "clean": "rimraf dist",
     "build": "yarn build:cli && yarn build:cz",
     "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
-    "build:cz": "browserify --node -o dist/cz.js lib/cz.js",
+    "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
     "eslint": "eslint lib/*.js",
     "precommit": "yarn lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
@@ -40,7 +40,7 @@
   },
   "config": {
     "commitizen": {
-      "path": "./index.js"
+      "path": "./dist/cz.js"
     }
   }
 }
