@@ -16,3 +16,4 @@ index.js
 package-lock.json
 run.js
 yarn.lock
+/test/

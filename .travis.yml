@@ -1,10 +1,12 @@
 language: node_js
 install:
-  - npm install
+  - yarn install
 script:
-  - npm run lint
+  - yarn lint
+  - yarn build
+  - yarn test
 after_success:
-  - npm run semantic-release
+  - npx semantic-release
   - npx ci-scripts slack
   - npx ci-scripts github-post
 branches:
