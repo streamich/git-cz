@@ -2,7 +2,7 @@
   "name": "git-cz",
   "version": "0.1.0",
   "description": "Semantic emojified git commit, git-cz",
-  "main": "lib/index.js",
+  "main": "dist/cz.js",
   "bin": {
     "git-cz": "./bin/git-cz.js",
     "gitcz": "./bin/git-cz.js"
@@ -15,6 +15,10 @@
   "license": "Unlicense",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
+    "clean": "rimraf dist",
+    "build": "yarn build:cli && yarn build:cz",
+    "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
+    "build:cz": "browserify --node -o dist/cz.js lib/cz.js",
     "eslint": "eslint lib/*.js",
     "precommit": "yarn lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
@@ -33,7 +37,8 @@
     "commitizen": "^2.9.6",
     "eslint": "^4.19.1",
     "eslint-config-mailonline": "^9.0.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "rimraf": "^2.6.2"
   },
   "config": {
     "commitizen": {

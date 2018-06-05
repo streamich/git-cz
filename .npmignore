@@ -8,3 +8,11 @@ npm-debug.log
 yarn.lock
 .vscode/
 yarn-error.log
+lib/
+.eslintrs.json
+.nvmrc
+.travis.yml
+index.js
+package-lock.json
+run.js
+yarn.lock
