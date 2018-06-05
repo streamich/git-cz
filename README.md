@@ -119,7 +119,13 @@ The footer is the place to reference any tasks related to this commit.
 ## Why this Fork?
 
 ```
-11:10 $ npm i -g mol-conventional-changelog
-+ mol-conventional-changelog@1.4.0
-added 345 packages in 38.677s
+npm i -g git-cz
+added 1 package in 0.612s
+```
+
+Installs in 0.6s vs 31.1s.
+
+```
+npm i -g mol-conventional-changelog
+added 345 packages in 31.076s
 ```
