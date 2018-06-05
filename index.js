@@ -1,3 +1,1 @@
-const {prompter} = require('./src/index');
-
-module.exports = {prompter};
+module.exports = require('./lib/index');

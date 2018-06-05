@@ -1,58 +1,43 @@
 {
-  "name": "mol-conventional-changelog",
-  "version": "0.0.0-semantically-released",
-  "description": "MOL Commitizen adapter following the conventional-changelog format",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"No test specified\" && exit 0",
-    "lint": "eslint {prompt/**,.}/*.js",
-    "precommit": "npm run lint",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  "name": "git-cz",
+  "version": "0.1.0",
+  "description": "Semantic emojified git commit, git-cz",
+  "main": "lib/index.js",
+  "bin": {
+    "git-cz": "./bin/git-cz.js",
+    "gitcz": "./bin/git-cz.js"
   },
-  "author": "MailOnline <fe@mailonline.co.uk>",
-  "homepage": "https://github.com/MailOnline/mol-conventional-changelog",
   "repository": {
     "type": "git",
-    "url": "git@github.com:MailOnline/mol-conventional-changelog.git"
+    "url": "git+ssh://git@github.com/streamich/git-cz.git"
   },
-  "license": "UNLICENSED",
+  "homepage": "https://github.com/streamich/git-cz",
+  "license": "Unlicense",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "eslint": "eslint lib/*.js",
+    "precommit": "yarn lint",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "lint": "yarn eslint"
+  },
   "dependencies": {
     "app-root-path": "^2.0.1",
-    "inquirer": "^3.1.1",
-    "shelljs": "^0.8.2",
+    "inquirer": "^6.0.0",
     "word-wrap": "^1.2.3",
     "pad-right": "^0.2.2",
-    "signale": "^1.1.0"
-  },
-  "optionalDependencies": {
-    "lerna": "^2.0.0-rc.5"
-  },
-  "peerDependencies": {
-    "lerna": "^2.0.0-rc.5"
+    "signale": "^1.1.0",
+    "minimist": "^1.2.0",
+    "chalk": "^2.4.1"
   },
   "devDependencies": {
     "commitizen": "^2.9.6",
     "eslint": "^4.19.1",
     "eslint-config-mailonline": "^9.0.0",
-    "husky": "^0.14.3",
-    "lerna": "^2.0.0-rc.5",
-    "semantic-release": "^6.3.6"
+    "husky": "^0.14.3"
   },
   "config": {
     "commitizen": {
-      "path": "./index.js",
-      "changelog": {
-        "maxMessageLength": 72,
-        "list": [
-          "feat",
-          "fix",
-          "chore",
-          "docs",
-          "refactor",
-          "style",
-          "ci"
-        ]
-      }
+      "path": "./index.js"
     }
   }
 }
