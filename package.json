@@ -1,8 +1,8 @@
 {
   "name": "git-cz",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Semantic emojified git commit, git-cz",
-  "main": "lib/index.js",
+  "main": "dist/cz.js",
   "bin": {
     "git-cz": "./bin/git-cz.js",
     "gitcz": "./bin/git-cz.js"
@@ -14,30 +14,35 @@
   "homepage": "https://github.com/streamich/git-cz",
   "license": "Unlicense",
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0",
-    "eslint": "eslint lib/*.js",
+    "lint": "yarn eslint",
+    "clean": "rimraf dist",
+    "build": "yarn build:cli && yarn build:cz",
+    "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
+    "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
+    "test": "mocha",
     "precommit": "yarn lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "lint": "yarn eslint"
+    "eslint": "eslint lib/*.js"
   },
-  "dependencies": {
-    "app-root-path": "^2.0.1",
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "mocha": "^5.2.0",
     "inquirer": "^6.0.0",
     "word-wrap": "^1.2.3",
     "pad-right": "^0.2.2",
     "signale": "^1.1.0",
-    "minimist": "^1.2.0",
-    "chalk": "^2.4.1"
-  },
-  "devDependencies": {
+    "chalk": "^2.4.1",
     "commitizen": "^2.9.6",
     "eslint": "^4.19.1",
     "eslint-config-mailonline": "^9.0.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "rimraf": "^2.6.2",
+    "shell-escape": "^0.2.0",
+    "minimist": "^1.2.0"
   },
   "config": {
     "commitizen": {
-      "path": "./index.js"
+      "path": "./dist/cz.js"
     }
   }
 }
