@@ -14,15 +14,15 @@
   "homepage": "https://github.com/streamich/git-cz",
   "license": "Unlicense",
   "scripts": {
-    "test": "mocha",
+    "lint": "yarn eslint",
     "clean": "rimraf dist",
     "build": "yarn build:cli && yarn build:cz",
     "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
     "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
-    "eslint": "eslint lib/*.js",
+    "test": "mocha",
     "precommit": "yarn lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "lint": "yarn eslint"
+    "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
