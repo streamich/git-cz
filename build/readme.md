@@ -46,6 +46,7 @@ BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite
 Issues: MOL-1234
 ```
 
+
 ## Custom config
 
 You can provide custom configuration in `changelog.congfig.js` file
@@ -79,16 +80,9 @@ This allows the message to be easier to read on GitHub as well as in various git
 
 Must be one of the following:
 
-- `test` &mdash; Adding missing tests
-- `feat` &mdash; A new feature
-- `fix` &mdash; A bug fix
-- `chore` &mdash; Build process or auxiliary tool changes
-- `docs` &mdash; Documentation only changes
-- `refactor` &mdash; A code change that neither fixes a bug or adds a feature
-- `style` &mdash; Markup, white-space, formatting, missing semi-colons...
-- `ci` &mdash; CI related changes
-- `perf` &mdash; A code change that improves performance
-
+```mmd
+return scripts.types();
+```
 
 ### Subject
 
@@ -119,21 +113,7 @@ The footer is the place to reference any tasks related to this commit.
 ## Why this Fork?
 
 ```
-<<<<<<< HEAD
-npm i -g git-cz
-added 1 package in 0.612s
-```
-
-Installs in 0.6s vs 31.1s.
-
-```
-npm i -g mol-conventional-changelog
-added 345 packages in 31.076s
-```
-=======
 11:10 $ npm i -g mol-conventional-changelog
 + mol-conventional-changelog@1.4.0
 added 345 packages in 38.677s
 ```
-
->>>>>>> feat: 🎸 add mmarkdown
