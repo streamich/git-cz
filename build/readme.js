@@ -9,3 +9,8 @@ exports.types = () => {
 
   return str;
 };
+
+exports.config = () =>
+  `\`\`\`js
+module.exports = ${JSON.stringify(defaults, null, 2)};
+\`\`\``;

@@ -2,17 +2,15 @@
 
 # git-cz
 
-## Usage
 
-
-##### Without installation
+### Without installation
 
 ```shell
 npx git-cz
 ```
 
 
-##### Install globally standalone
+### Install globally standalone
 
 ```shell
 npm install -g git-cz
@@ -20,14 +18,14 @@ git-cz
 ```
 
 
-##### Install locally with Commitizen
+### Install locally with Commitizen
 
 ```shell
 npm install -g commitizen
 npm install --save-dev git-cz
 ```
 
-and add to `package.json`:
+`package.json`:
 
 ```json
 {
@@ -39,28 +37,28 @@ and add to `package.json`:
 }
 ```
 
-now run:
+run:
 
 ```shell
 git cz
 ```
 
 
-##### Install globally with Commitizen
+### Install globally with Commitizen
 
 ```shell
 npm install -g commitizen git-cz
 commitizen init git-cz --save-dev --save-exact
 ```
 
-now run:
+run:
 
 ```shell
 git cz
 ```
 
 
-## Examples
+## Example
 
 ![](./docs/example.png)
 
@@ -68,7 +66,11 @@ git cz
 ## Custom config
 
 You can provide custom configuration in `changelog.congfig.js` file
-in your repo. See [default configuration file](./src/defaults.js) for reference.
+in your repo. Below is default config:
+
+```mmd
+return scripts.config();
+```
 
 
 ## Commit Message Format

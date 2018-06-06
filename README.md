@@ -2,30 +2,28 @@
 
 # git-cz
 
-## Usage
 
-
-##### Without installation
+### Without installation
 
 ```shell
 npx git-cz
 ```
 
-##### Install globally standalone
+### Install globally standalone
 
 ```shell
 npm install -g git-cz
 git-cz
 ```
 
-##### Install locally with Commitizen
+### Install locally with Commitizen
 
 ```shell
 npm install -g commitizen
 npm install --save-dev git-cz
 ```
 
-and add to `package.json`:
+`package.json`:
 
 ```json
 {
@@ -37,26 +35,26 @@ and add to `package.json`:
 }
 ```
 
-now run:
+run:
 
 ```shell
 git cz
 ```
 
-##### Install globally with Commitizen
+### Install globally with Commitizen
 
 ```shell
 npm install -g commitizen git-cz
 commitizen init git-cz --save-dev --save-exact
 ```
 
-now run:
+run:
 
 ```shell
 git cz
 ```
 
-## Examples
+## Example
 
 ![](./docs/example.png)
 
@@ -64,8 +62,87 @@ git cz
 ## Custom config
 
 You can provide custom configuration in `changelog.congfig.js` file
-in your repo. See [default configuration file](./src/defaults.js) for reference.
+in your repo. Below is default config:
 
+```js
+module.exports = {
+  "list": [
+    "test",
+    "feat",
+    "fix",
+    "chore",
+    "docs",
+    "refactor",
+    "style",
+    "ci",
+    "perf"
+  ],
+  "maxMessageLength": 64,
+  "minMessageLength": 3,
+  "questions": [
+    "type",
+    "scope",
+    "subject",
+    "body",
+    "breaking",
+    "issues",
+    "lerna"
+  ],
+  "scopes": [],
+  "types": {
+    "chore": {
+      "description": "Build process or auxiliary tool changes",
+      "emoji": "🤖",
+      "value": "chore"
+    },
+    "ci": {
+      "description": "CI related changes",
+      "emoji": "🎡",
+      "value": "ci"
+    },
+    "docs": {
+      "description": "Documentation only changes",
+      "emoji": "✏️",
+      "value": "docs"
+    },
+    "feat": {
+      "description": "A new feature",
+      "emoji": "🎸",
+      "value": "feat"
+    },
+    "fix": {
+      "description": "A bug fix",
+      "emoji": "🐛",
+      "value": "fix"
+    },
+    "perf": {
+      "description": "A code change that improves performance",
+      "emoji": "⚡️",
+      "value": "perf"
+    },
+    "refactor": {
+      "description": "A code change that neither fixes a bug or adds a feature",
+      "emoji": "💡",
+      "value": "refactor"
+    },
+    "release": {
+      "description": "Create a release commit",
+      "emoji": "🏹",
+      "value": "release"
+    },
+    "style": {
+      "description": "Markup, white-space, formatting, missing semi-colons...",
+      "emoji": "💄",
+      "value": "style"
+    },
+    "test": {
+      "description": "Adding missing tests",
+      "emoji": "💍",
+      "value": "test"
+    }
+  }
+};
+```
 
 ## Commit Message Format
 
