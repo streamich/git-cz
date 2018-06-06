@@ -58,21 +58,8 @@ git cz
 
 ## Examples
 
-```
-feat: 🎸 add 'graphiteWidth' option
-```
+![](./docs/example.png)
 
-```
-fix: 🐞 stop graphite breaking when width < 0.1
-```
-
-```
-perf: ⚡️ remove graphiteWidth option
-
-BREAKING CHANGE: The graphiteWidth option has been removed. The default graphite width of 10mm is always used for performance reason.
-
-Issues: MOL-1234
-```
 
 ## Custom config
 
@@ -147,7 +134,6 @@ The footer is the place to reference any tasks related to this commit.
 ## Why this Fork?
 
 ```
-<<<<<<< HEAD
 npm i -g git-cz
 added 1 package in 0.612s
 ```
@@ -158,10 +144,4 @@ Installs in 0.6s vs 31.1s.
 npm i -g mol-conventional-changelog
 added 345 packages in 31.076s
 ```
-=======
-11:10 $ npm i -g mol-conventional-changelog
-+ mol-conventional-changelog@1.4.0
-added 345 packages in 38.677s
-```
 
->>>>>>> feat: 🎸 add mmarkdown
