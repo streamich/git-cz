@@ -1,32 +1,64 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-# mol-conventional-changelog
-
-## Setup
-
-Install commitizen
-
-```shell
-npm install -g commitizen
-```
-
-Install the `mol-conventional-changelog` package.
-
-```shell
-npm install --save-dev mol-conventional-changelog
-```
-
-Init commitizen configuration
-
-```shell
-commitizen init mol-conventional-changelog --save-dev --save-exact
-```
+# git-cz
 
 ## Usage
 
+
+##### Without installation
+
+```shell
+npx git-cz
 ```
+
+
+##### Install globally standalone
+
+```shell
+npm install -g git-cz
+git-cz
+```
+
+
+##### Install locally with Commitizen
+
+```shell
+npm install -g commitizen
+npm install --save-dev git-cz
+```
+
+and add to `package.json`:
+
+```json
+{
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
+}
+```
+
+now run:
+
+```shell
 git cz
 ```
+
+
+##### Install globally with Commitizen
+
+```shell
+npm install -g commitizen git-cz
+commitizen init git-cz --save-dev --save-exact
+```
+
+now run:
+
+```shell
+git cz
+```
+
 
 ## Examples
 
