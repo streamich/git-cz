@@ -17,3 +17,5 @@ package-lock.json
 run.js
 yarn.lock
 /test/
+/build/
+/docs/

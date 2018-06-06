@@ -9,12 +9,14 @@
 npx git-cz
 ```
 
+
 ### Install globally standalone
 
 ```shell
 npm install -g git-cz
 git-cz
 ```
+
 
 ### Install locally with Commitizen
 
@@ -41,6 +43,7 @@ run:
 git cz
 ```
 
+
 ### Install globally with Commitizen
 
 ```shell
@@ -54,6 +57,7 @@ run:
 git cz
 ```
 
+
 ## Example
 
 ![](./docs/example.png)
@@ -64,85 +68,10 @@ git cz
 You can provide custom configuration in `changelog.congfig.js` file
 in your repo. Below is default config:
 
-```js
-module.exports = {
-  "list": [
-    "test",
-    "feat",
-    "fix",
-    "chore",
-    "docs",
-    "refactor",
-    "style",
-    "ci",
-    "perf"
-  ],
-  "maxMessageLength": 64,
-  "minMessageLength": 3,
-  "questions": [
-    "type",
-    "scope",
-    "subject",
-    "body",
-    "breaking",
-    "issues",
-    "lerna"
-  ],
-  "scopes": [],
-  "types": {
-    "chore": {
-      "description": "Build process or auxiliary tool changes",
-      "emoji": "🤖",
-      "value": "chore"
-    },
-    "ci": {
-      "description": "CI related changes",
-      "emoji": "🎡",
-      "value": "ci"
-    },
-    "docs": {
-      "description": "Documentation only changes",
-      "emoji": "✏️",
-      "value": "docs"
-    },
-    "feat": {
-      "description": "A new feature",
-      "emoji": "🎸",
-      "value": "feat"
-    },
-    "fix": {
-      "description": "A bug fix",
-      "emoji": "🐛",
-      "value": "fix"
-    },
-    "perf": {
-      "description": "A code change that improves performance",
-      "emoji": "⚡️",
-      "value": "perf"
-    },
-    "refactor": {
-      "description": "A code change that neither fixes a bug or adds a feature",
-      "emoji": "💡",
-      "value": "refactor"
-    },
-    "release": {
-      "description": "Create a release commit",
-      "emoji": "🏹",
-      "value": "release"
-    },
-    "style": {
-      "description": "Markup, white-space, formatting, missing semi-colons...",
-      "emoji": "💄",
-      "value": "style"
-    },
-    "test": {
-      "description": "Adding missing tests",
-      "emoji": "💍",
-      "value": "test"
-    }
-  }
-};
+```mmd
+return scripts.config();
 ```
+
 
 ## Commit Message Format
 
@@ -171,16 +100,9 @@ This allows the message to be easier to read on GitHub as well as in various git
 
 Must be one of the following:
 
-- `test` &mdash; Adding missing tests
-- `feat` &mdash; A new feature
-- `fix` &mdash; A bug fix
-- `chore` &mdash; Build process or auxiliary tool changes
-- `docs` &mdash; Documentation only changes
-- `refactor` &mdash; A code change that neither fixes a bug or adds a feature
-- `style` &mdash; Markup, white-space, formatting, missing semi-colons...
-- `ci` &mdash; CI related changes
-- `perf` &mdash; A code change that improves performance
-
+```mmd
+return scripts.types();
+```
 
 ### Subject
 
@@ -221,4 +143,3 @@ Installs in 0.6s vs 31.1s.
 npm i -g mol-conventional-changelog
 added 345 packages in 31.076s
 ```
-

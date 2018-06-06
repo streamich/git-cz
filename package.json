@@ -19,12 +19,14 @@
     "build": "yarn build:cli && yarn build:cz",
     "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
     "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
+    "build:readme": "mmarkdown",
     "test": "mocha",
     "precommit": "yarn lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
+    "mmarkdown": "^1.0.0",
     "browserify": "^16.2.2",
     "mocha": "^5.2.0",
     "inquirer": "^6.0.0",
@@ -44,5 +46,11 @@
     "commitizen": {
       "path": "./dist/cz.js"
     }
+  },
+  "mmarkdown": {
+    "src": "./build/readme.md",
+    "out": "./README.md",
+    "scripts": "./build/readme.js",
+    "backup": false
   }
 }
