@@ -6,7 +6,7 @@ script:
   - yarn build
   - yarn test
 after_success:
-  - npx semantic-release@15.5.0
+  - npx semantic-release
   - npx ci-scripts slack
   - npx ci-scripts github-post
 branches:
