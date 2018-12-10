@@ -1,6 +1,9 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
+
 # git-cz
+
+![image](https://user-images.githubusercontent.com/9773803/49760520-fa6c6f00-fcc4-11e8-84c4-80727f071487.png)
 
 
 ### Without installation
@@ -53,10 +56,6 @@ run:
 ```shell
 git cz
 ```
-
-## Example
-
-![](./docs/example.png)
 
 
 ## Custom config
