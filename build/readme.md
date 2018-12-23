@@ -1,28 +1,33 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+# commit-prompt
 
-# git-cz
+> A fork of [`git-cz`](https://github.com/streamich/git-cz). 
 
+1) Allows scope as free text
+2) Adds **Pivotal Tracker ID** question. It tries to get the ticket id from git branch first (if you use git flow, your branch should be feature/#id), if not found, asks user to input, and wrap it in `[#id]` format, as required by Pivotal Tracker Gitlab integration.
+
+Base principles refrences:
+
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
+- [GitMoji](https://gitmoji.carloscuesta.me/)
 
 ### Without installation
 
 ```shell
-npx git-cz
+npx commit-prompt
 ```
-
 
 ### Install globally standalone
 
 ```shell
-npm install -g git-cz
-git-cz
+npm install -g commit-prompt
+commit-prompt
 ```
-
 
 ### Install locally with Commitizen
 
 ```shell
 npm install -g commitizen
-npm install --save-dev git-cz
+npm install --save-dev commit-prompt
 ```
 
 `package.json`:
@@ -31,7 +36,7 @@ npm install --save-dev git-cz
 {
   "config": {
     "commitizen": {
-      "path": "git-cz"
+      "path": "commit-prompt"
     }
   },
 }
@@ -43,12 +48,11 @@ run:
 git cz
 ```
 
-
 ### Install globally with Commitizen
 
 ```shell
-npm install -g commitizen git-cz
-commitizen init git-cz --save-dev --save-exact
+npm install -g commitizen commit-prompt
+commitizen init commit-prompt --save-dev --save-exact
 ```
 
 run:
@@ -56,11 +60,6 @@ run:
 ```shell
 git cz
 ```
-
-
-## Example
-
-![](./docs/example.png)
 
 
 ## Custom config
@@ -79,7 +78,7 @@ return scripts.config();
 * The header has a **type** and a **subject**:
 
 ```
-<type>[(<scope>)]: <emoji> <subject>
+<type>[(<scope>)]: <emoji> <pivotalTrackerId> <subject>
 [BLANK LINE]
 [body]
 [BLANK LINE]
@@ -90,7 +89,7 @@ return scripts.config();
 
 The **header** is the only mandatory part of the commit message.
 
-The first line (type + subject) is limited to 50 characters **[enforced]**
+The first line (type + pivotalTrackerId + subject) is limited to 50 characters **[enforced]**
 
 Any other line should be limited to 72 character **[automatic wrapping]**
 
@@ -100,9 +99,16 @@ This allows the message to be easier to read on GitHub as well as in various git
 
 Must be one of the following:
 
-```mmd
-return scripts.types();
-```
+- `test` &mdash; Adding missing tests
+- `feat` &mdash; A new feature
+- `fix` &mdash; A bug fix
+- `chore` &mdash; Build process or auxiliary tool changes
+- `docs` &mdash; Documentation only changes
+- `refactor` &mdash; A code change that neither fixes a bug or adds a feature
+- `style` &mdash; Markup, white-space, formatting, missing semi-colons...
+- `ci` &mdash; CI related changes
+- `perf` &mdash; A code change that improves performance
+
 
 ### Subject
 
@@ -133,7 +139,7 @@ The footer is the place to reference any tasks related to this commit.
 ## Why this Fork?
 
 ```
-npm i -g git-cz
+npm i -g commit-prompt
 added 1 package in 0.612s
 ```
 
@@ -143,3 +149,4 @@ Installs in 0.6s vs 31.1s.
 npm i -g mol-conventional-changelog
 added 345 packages in 31.076s
 ```
+

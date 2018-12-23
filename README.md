@@ -5,6 +5,11 @@
 1) Allows scope as free text
 2) Adds **Pivotal Tracker ID** question. It tries to get the ticket id from git branch first (if you use git flow, your branch should be feature/#id), if not found, asks user to input, and wrap it in `[#id]` format, as required by Pivotal Tracker Gitlab integration.
 
+Base principles refrences:
+
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
+- [GitMoji](https://gitmoji.carloscuesta.me/)
+
 ### Without installation
 
 ```shell
@@ -56,11 +61,88 @@ run:
 git cz
 ```
 
-
 ## Custom config
 
 You can provide custom configuration in `changelog.congfig.js` file
-in your repo. You can check out the defult config in [lib/default.js](lib/default.js)
+in your repo. Below is default config:
+
+```js
+module.exports = {
+  "list": [
+    "test",
+    "feat",
+    "fix",
+    "chore",
+    "docs",
+    "refactor",
+    "style",
+    "ci",
+    "perf"
+  ],
+  "maxMessageLength": 64,
+  "minMessageLength": 3,
+  "questions": [
+    "type",
+    "scope",
+    "pivotalTrackerId",
+    "subject",
+    "breaking",
+    "body"
+  ],
+  "types": {
+    "chore": {
+      "description": "Build process or auxiliary tool changes",
+      "emoji": "🤖",
+      "value": "chore"
+    },
+    "ci": {
+      "description": "CI related changes",
+      "emoji": "🎡",
+      "value": "ci"
+    },
+    "docs": {
+      "description": "Documentation only changes",
+      "emoji": "✏️",
+      "value": "docs"
+    },
+    "feat": {
+      "description": "A new feature",
+      "emoji": "🎸",
+      "value": "feat"
+    },
+    "fix": {
+      "description": "A bug fix",
+      "emoji": "🐛",
+      "value": "fix"
+    },
+    "perf": {
+      "description": "A code change that improves performance",
+      "emoji": "⚡️",
+      "value": "perf"
+    },
+    "refactor": {
+      "description": "A code change that neither fixes a bug or adds a feature",
+      "emoji": "💡",
+      "value": "refactor"
+    },
+    "release": {
+      "description": "Create a release commit",
+      "emoji": "🏹",
+      "value": "release"
+    },
+    "style": {
+      "description": "Markup, white-space, formatting, missing semi-colons...",
+      "emoji": "💄",
+      "value": "style"
+    },
+    "test": {
+      "description": "Adding missing tests",
+      "emoji": "💍",
+      "value": "test"
+    }
+  }
+};
+```
 
 ## Commit Message Format
 

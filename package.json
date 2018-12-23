@@ -15,13 +15,12 @@
   "scripts": {
     "lint": "npm run eslint",
     "clean": "rimraf dist",
-    "build": "npm run build:cli && yarn build:cz",
+    "build": "npm run build:cli && npm run build:cz",
     "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
     "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
     "build:readme": "mmarkdown",
     "test": "mocha",
     "precommit": "npm run lint",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
