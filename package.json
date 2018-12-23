@@ -8,9 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/trucknet-io/git-cz"
+    "url": "git+ssh://git@github.com/trucknet-io/commit-prompt"
   },
-  "homepage": "https://github.com/trucknet-io/git-cz",
+  "homepage": "https://github.com/trucknet-io/commit-prompt",
   "license": "Unlicense",
   "scripts": {
     "lint": "npm run eslint",
