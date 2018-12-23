@@ -64,7 +64,7 @@ git cz
 
 ## Custom config
 
-You can provide custom configuration in `changelog.congfig.js` file
+You can provide custom configuration in `commit-prompt.congfig.js` (or `.commitpromptrc`, `.commit-prompt.js`, `.commit-prompt.json`) file
 in your repo. Below is default config:
 
 ```mmd
