@@ -1,27 +1,26 @@
 {
-  "name": "git-cz",
-  "version": "0.1.1",
-  "description": "Semantic emojified git commit, git-cz",
+  "name": "commit-prompt",
+  "version": "0.0.1",
+  "description": "Trucknet's official commit tool, based on Conventional Commits ideology. Prompts for a commit type, scope; gets PivotalTracker id automatically from branch name (or asks for it), asks for any BREAKING CHANGES and gets full commit body.",
   "main": "dist/cz.js",
   "bin": {
-    "git-cz": "./bin/git-cz.js",
-    "gitcz": "./bin/git-cz.js"
+    "git-cz": "./bin/git-cz.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/streamich/git-cz.git"
+    "url": "git+ssh://git@github.com/trucknet-io/git-cz"
   },
-  "homepage": "https://github.com/streamich/git-cz",
+  "homepage": "https://github.com/trucknet-io/git-cz",
   "license": "Unlicense",
   "scripts": {
-    "lint": "yarn eslint",
+    "lint": "npm run eslint",
     "clean": "rimraf dist",
-    "build": "yarn build:cli && yarn build:cz",
+    "build": "npm run build:cli && yarn build:cz",
     "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
     "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
     "build:readme": "mmarkdown",
     "test": "mocha",
-    "precommit": "yarn lint",
+    "precommit": "npm run lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "eslint": "eslint lib/*.js"
   },
