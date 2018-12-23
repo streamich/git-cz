@@ -1,6 +1,6 @@
 {
   "name": "commit-prompt",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Trucknet's official commit tool, based on Conventional Commits ideology. Prompts for a commit type, scope; gets PivotalTracker id automatically from branch name (or asks for it), asks for any BREAKING CHANGES and gets full commit body.",
   "main": "dist/cz.js",
   "bin": {
