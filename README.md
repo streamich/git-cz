@@ -1,29 +1,28 @@
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+# commit-prompt
 
+> A fork of `git-cz`. 
 
-# git-cz
-
-![image](https://user-images.githubusercontent.com/9773803/49760520-fa6c6f00-fcc4-11e8-84c4-80727f071487.png)
-
+1) Allows scope as free text
+2) Adds **Pivotal Tracker ID** question. It tries to get the ticket id from git branch first (if you use git flow, your branch should be feature/#id), if not found, asks user to input, and wrap it in `[#id]` format, as required by Pivotal Tracker Gitlab integration.
 
 ### Without installation
 
 ```shell
-npx git-cz
+npx commit-prompt
 ```
 
 ### Install globally standalone
 
 ```shell
-npm install -g git-cz
-git-cz
+npm install -g commit-prompt
+commit-prompt
 ```
 
 ### Install locally with Commitizen
 
 ```shell
 npm install -g commitizen
-npm install --save-dev git-cz
+npm install --save-dev commit-prompt
 ```
 
 `package.json`:
@@ -32,7 +31,7 @@ npm install --save-dev git-cz
 {
   "config": {
     "commitizen": {
-      "path": "git-cz"
+      "path": "commit-prompt"
     }
   },
 }
@@ -47,8 +46,8 @@ git cz
 ### Install globally with Commitizen
 
 ```shell
-npm install -g commitizen git-cz
-commitizen init git-cz --save-dev --save-exact
+npm install -g commitizen commit-prompt
+commitizen init commit-prompt --save-dev --save-exact
 ```
 
 run:
@@ -61,87 +60,7 @@ git cz
 ## Custom config
 
 You can provide custom configuration in `changelog.congfig.js` file
-in your repo. Below is default config:
-
-```js
-module.exports = {
-  "list": [
-    "test",
-    "feat",
-    "fix",
-    "chore",
-    "docs",
-    "refactor",
-    "style",
-    "ci",
-    "perf"
-  ],
-  "maxMessageLength": 64,
-  "minMessageLength": 3,
-  "questions": [
-    "type",
-    "scope",
-    "subject",
-    "body",
-    "breaking",
-    "issues",
-    "lerna"
-  ],
-  "scopes": [],
-  "types": {
-    "chore": {
-      "description": "Build process or auxiliary tool changes",
-      "emoji": "🤖",
-      "value": "chore"
-    },
-    "ci": {
-      "description": "CI related changes",
-      "emoji": "🎡",
-      "value": "ci"
-    },
-    "docs": {
-      "description": "Documentation only changes",
-      "emoji": "✏️",
-      "value": "docs"
-    },
-    "feat": {
-      "description": "A new feature",
-      "emoji": "🎸",
-      "value": "feat"
-    },
-    "fix": {
-      "description": "A bug fix",
-      "emoji": "🐛",
-      "value": "fix"
-    },
-    "perf": {
-      "description": "A code change that improves performance",
-      "emoji": "⚡️",
-      "value": "perf"
-    },
-    "refactor": {
-      "description": "A code change that neither fixes a bug or adds a feature",
-      "emoji": "💡",
-      "value": "refactor"
-    },
-    "release": {
-      "description": "Create a release commit",
-      "emoji": "🏹",
-      "value": "release"
-    },
-    "style": {
-      "description": "Markup, white-space, formatting, missing semi-colons...",
-      "emoji": "💄",
-      "value": "style"
-    },
-    "test": {
-      "description": "Adding missing tests",
-      "emoji": "💍",
-      "value": "test"
-    }
-  }
-};
-```
+in your repo. You can check out the defult config in [lib/default.js](lib/default.js)
 
 ## Commit Message Format
 
@@ -149,7 +68,7 @@ module.exports = {
 * The header has a **type** and a **subject**:
 
 ```
-<type>[(<scope>)]: <emoji> <subject>
+<type>[(<scope>)]: <emoji> <pivotalTrackerId> <subject>
 [BLANK LINE]
 [body]
 [BLANK LINE]
@@ -160,7 +79,7 @@ module.exports = {
 
 The **header** is the only mandatory part of the commit message.
 
-The first line (type + subject) is limited to 50 characters **[enforced]**
+The first line (type + pivotalTrackerId + subject) is limited to 50 characters **[enforced]**
 
 Any other line should be limited to 72 character **[automatic wrapping]**
 
@@ -210,7 +129,7 @@ The footer is the place to reference any tasks related to this commit.
 ## Why this Fork?
 
 ```
-npm i -g git-cz
+npm i -g commit-prompt
 added 1 package in 0.612s
 ```
 
