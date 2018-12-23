@@ -1,6 +1,6 @@
 # commit-prompt
 
-> A fork of `git-cz`. 
+> A fork of [`git-cz`](https://github.com/streamich/git-cz). 
 
 1) Allows scope as free text
 2) Adds **Pivotal Tracker ID** question. It tries to get the ticket id from git branch first (if you use git flow, your branch should be feature/#id), if not found, asks user to input, and wrap it in `[#id]` format, as required by Pivotal Tracker Gitlab integration.
