@@ -60,7 +60,7 @@ git cz
 
 ## Custom config
 
-You can provide custom configuration in `changelog.congfig.js` file
+You can provide custom configuration in `changelog.config.js` file
 in your repo. Below is default config:
 
 ```js
