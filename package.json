@@ -26,21 +26,18 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "mmarkdown": "^1.0.0",
+    "any-shell-escape": "^0.1.1",
     "browserify": "^16.2.2",
-    "mocha": "^5.2.0",
-    "inquirer": "^6.0.0",
-    "word-wrap": "^1.2.3",
-    "pad-right": "^0.2.2",
-    "signale": "^1.1.0",
     "chalk": "^2.4.1",
     "commitizen": "^2.9.6",
     "eslint": "^4.19.1",
     "eslint-config-mailonline": "^9.0.0",
     "husky": "^0.14.3",
+    "inquirer": "^6.2.2",
+    "minimist": "^1.2.0",
     "rimraf": "^2.6.2",
-    "shell-escape": "^0.2.0",
-    "minimist": "^1.2.0"
+    "signale": "^1.4.0",
+    "word-wrap": "^1.2.3"
   },
   "config": {
     "commitizen": {
@@ -52,5 +49,9 @@
     "out": "./README.md",
     "scripts": "./build/readme.js",
     "backup": false
+  },
+  "dependencies": {
+    "global": "^4.3.2",
+    "mocha": "^6.0.2"
   }
 }
