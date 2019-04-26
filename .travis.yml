@@ -5,6 +5,8 @@ script:
   - yarn lint
   - yarn build
   - yarn test
+node_js:
+  - '10'
 after_success:
   - npx semantic-release
   - npx ci-scripts slack
