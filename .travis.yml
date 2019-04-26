@@ -4,6 +4,7 @@ install:
 script:
   - yarn lint
   - yarn build
+  - yarn build:binaries
   - yarn test
 node_js:
   - '10'
