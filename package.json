@@ -15,17 +15,22 @@
   "license": "Unlicense",
   "scripts": {
     "lint": "yarn eslint",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist binaries",
     "build": "yarn build:cli && yarn build:cz",
     "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
     "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
     "build:readme": "mmarkdown",
+    "build:binaries": "mkdirp binaries && pkg lib/cli.js --out-path binaries",
     "test": "mocha",
     "precommit": "yarn lint",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "3.0.2",
+    "@semantic-release/git": "7.0.8",
+    "@semantic-release/github": "5.2.10",
+    "@semantic-release/npm": "5.1.4",
     "any-shell-escape": "0.1.1",
     "browserify": "16.2.3",
     "chalk": "2.4.2",
@@ -35,7 +40,9 @@
     "husky": "0.14.3",
     "inquirer": "6.3.1",
     "minimist": "1.2.0",
+    "pkg": "^4.3.7",
     "rimraf": "2.6.3",
+    "semantic-release": "15.13.3",
     "signale": "1.4.0",
     "word-wrap": "1.2.3"
   },
@@ -53,5 +60,38 @@
   "dependencies": {
     "global": "^4.3.2",
     "mocha": "^6.0.2"
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "publish": [
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "binaries/cli-linux",
+              "label": "Linux binary"
+            },
+            {
+              "path": "binaries/cli-macos",
+              "label": "Mac binary"
+            },
+            {
+              "path": "binaries/cli-win.exe",
+              "label": "Windows binary"
+            }
+          ]
+        }
+      ]
+    ]
   }
 }
