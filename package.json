@@ -45,7 +45,7 @@
     "semantic-release": "15.13.3",
     "signale": "1.4.0",
     "word-wrap": "1.2.3",
-    "mocha": "6.0.2"
+    "mocha": "6.1.4"
   },
   "config": {
     "commitizen": {
