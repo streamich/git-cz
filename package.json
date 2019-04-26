@@ -15,11 +15,12 @@
   "license": "Unlicense",
   "scripts": {
     "lint": "yarn eslint",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist binaries",
     "build": "yarn build:cli && yarn build:cz",
     "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
     "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
     "build:readme": "mmarkdown",
+    "build:binaries": "mkdirp binaries && pkg lib/cli.js --out-path binaries",
     "test": "mocha",
     "precommit": "yarn lint",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
@@ -35,6 +36,8 @@
     "husky": "0.14.3",
     "inquirer": "6.3.1",
     "minimist": "1.2.0",
+    "mkdirp": "^0.5.1",
+    "pkg": "^4.3.7",
     "rimraf": "2.6.3",
     "signale": "1.4.0",
     "word-wrap": "1.2.3"
