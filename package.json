@@ -44,7 +44,8 @@
     "rimraf": "2.6.3",
     "semantic-release": "15.13.3",
     "signale": "1.4.0",
-    "word-wrap": "1.2.3"
+    "word-wrap": "1.2.3",
+    "mocha": "^6.0.2"
   },
   "config": {
     "commitizen": {
@@ -58,8 +59,7 @@
     "backup": false
   },
   "dependencies": {
-    "global": "^4.3.2",
-    "mocha": "^6.0.2"
+    "global": "^4.3.2"
   },
   "release": {
     "verifyConditions": [
