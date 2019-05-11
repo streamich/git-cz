@@ -40,7 +40,7 @@
     "husky": "0.14.3",
     "inquirer": "6.3.1",
     "minimist": "1.2.0",
-    "pkg": "4.3.8",
+    "pkg": "4.4.0",
     "rimraf": "2.6.3",
     "semantic-release": "15.13.12",
     "signale": "1.4.0",
