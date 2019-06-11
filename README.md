@@ -65,6 +65,7 @@ in your repo. Below is default config:
 
 ```js
 module.exports = {
+  "disableEmoji": false,
   "list": [
     "test",
     "feat",
