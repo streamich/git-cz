@@ -206,15 +206,15 @@
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
 
-"@semantic-release/git@7.0.12":
-  version "7.0.12"
-  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.12.tgz#53700bdf23f014cf755173650f27b55ad31ebda4"
+"@semantic-release/git@7.0.13":
+  version "7.0.13"
+  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.13.tgz#4099237d355a9411cb08d8264e5c4cef99f84dd9"
   dependencies:
     "@semantic-release/error" "^2.1.0"
     aggregate-error "^3.0.0"
     debug "^4.0.0"
     dir-glob "^2.0.0"
-    execa "^1.0.0"
+    execa "^2.0.0"
     fs-extra "^8.0.0"
     globby "^9.0.0"
     lodash "^4.17.4"
@@ -265,13 +265,13 @@
     parse-github-url "^1.0.1"
     url-join "^4.0.0"
 
-"@semantic-release/npm@5.1.9":
-  version "5.1.9"
-  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.1.9.tgz#30d775433c91f32d7365382574aeda3b1422a5df"
+"@semantic-release/npm@5.1.11":
+  version "5.1.11"
+  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.1.11.tgz#ccc37c4419e12969e08caf4155afeb046f9fe2bf"
   dependencies:
     "@semantic-release/error" "^2.2.0"
     aggregate-error "^3.0.0"
-    execa "^1.0.0"
+    execa "^2.0.0"
     fs-extra "^8.0.0"
     lodash "^4.17.4"
     nerf-dart "^1.0.0"
@@ -279,7 +279,7 @@
     npm "^6.8.0"
     rc "^1.2.8"
     read-pkg "^5.0.0"
-    registry-auth-token "^3.3.1"
+    registry-auth-token "^4.0.0"
 
 "@semantic-release/npm@^5.0.5":
   version "5.1.4"
@@ -6189,6 +6189,13 @@ registry-auth-token@^3.0.1, registry-auth-token@^3.3.1:
   resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-3.4.0.tgz#d7446815433f5d5ed6431cd5dca21048f66b397e"
   dependencies:
     rc "^1.1.6"
+    safe-buffer "^5.0.1"
+
+registry-auth-token@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/registry-auth-token/-/registry-auth-token-4.0.0.tgz#30e55961eec77379da551ea5c4cf43cbf03522be"
+  dependencies:
+    rc "^1.2.8"
     safe-buffer "^5.0.1"
 
 registry-url@^3.0.3:
