@@ -265,9 +265,9 @@
     parse-github-url "^1.0.1"
     url-join "^4.0.0"
 
-"@semantic-release/npm@5.1.11":
-  version "5.1.11"
-  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.1.11.tgz#ccc37c4419e12969e08caf4155afeb046f9fe2bf"
+"@semantic-release/npm@5.1.12":
+  version "5.1.12"
+  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.1.12.tgz#1cb8a3ce4d9f6b00b01b9872b4cddc383d80d1b5"
   dependencies:
     "@semantic-release/error" "^2.2.0"
     aggregate-error "^3.0.0"
