@@ -28,8 +28,8 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.4",
-    "@semantic-release/git": "7.0.15",
-    "@semantic-release/github": "5.4.0",
+    "@semantic-release/git": "7.0.16",
+    "@semantic-release/github": "5.4.2",
     "@semantic-release/npm": "5.1.13",
     "any-shell-escape": "0.1.1",
     "browserify": "16.2.3",
