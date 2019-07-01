@@ -1,3 +1,11 @@
+## [3.2.1](https://github.com/streamich/git-cz/compare/v3.2.0...v3.2.1) (2019-07-01)
+
+
+### Bug Fixes
+
+* trigger again ([ee4cf18](https://github.com/streamich/git-cz/commit/ee4cf18))
+* trigger new release ([5457be9](https://github.com/streamich/git-cz/commit/5457be9))
+
 # [3.2.0](https://github.com/streamich/git-cz/compare/v3.1.1...v3.2.0) (2019-07-01)
 
 
