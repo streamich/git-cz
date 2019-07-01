@@ -1,3 +1,15 @@
+# [3.2.0](https://github.com/streamich/git-cz/compare/v3.1.1...v3.2.0) (2019-07-01)
+
+
+### Bug Fixes
+
+* 🐛 don't add emoji to head only when "disableEmoji" is true ([45489c8](https://github.com/streamich/git-cz/commit/45489c8))
+
+
+### Features
+
+* 🎸 added disableEmojis on config ([448873e](https://github.com/streamich/git-cz/commit/448873e))
+
 ## [3.1.1](https://github.com/streamich/git-cz/compare/v3.1.0...v3.1.1) (2019-04-26)
 
 
