@@ -895,9 +895,9 @@ browserify-zlib@^0.2.0, browserify-zlib@~0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserify@16.2.3:
-  version "16.2.3"
-  resolved "https://registry.yarnpkg.com/browserify/-/browserify-16.2.3.tgz#7ee6e654ba4f92bce6ab3599c3485b1cc7a0ad0b"
+browserify@16.3.0:
+  version "16.3.0"
+  resolved "https://registry.yarnpkg.com/browserify/-/browserify-16.3.0.tgz#4d414466e0b07492fff493a009ea883a9f2db230"
   dependencies:
     JSONStream "^1.0.3"
     assert "^1.4.0"
