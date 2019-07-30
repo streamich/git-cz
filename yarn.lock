@@ -4408,9 +4408,9 @@ marked-terminal@^3.2.0:
     node-emoji "^1.4.1"
     supports-hyperlinks "^1.0.1"
 
-marked@^0.6.0:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-0.6.2.tgz#c574be8b545a8b48641456ca1dbe0e37b6dccc1a"
+marked@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.7.0.tgz#b64201f051d271b1edc10a04d1ae9b74bb8e5c0e"
 
 math-random@^1.0.1:
   version "1.0.1"
@@ -6465,9 +6465,9 @@ safe-regex@^1.1.0:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
 
-semantic-release@15.13.18:
-  version "15.13.18"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.13.18.tgz#72e284c6f7cb7817e1aaaa0a9d73600a9447d146"
+semantic-release@15.13.19:
+  version "15.13.19"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.13.19.tgz#d1d05b3516fb8701d81f4e6b9be42bafffef13cb"
   dependencies:
     "@semantic-release/commit-analyzer" "^6.1.0"
     "@semantic-release/error" "^2.2.0"
@@ -6486,7 +6486,7 @@ semantic-release@15.13.18:
     hook-std "^2.0.0"
     hosted-git-info "^2.7.1"
     lodash "^4.17.4"
-    marked "^0.6.0"
+    marked "^0.7.0"
     marked-terminal "^3.2.0"
     p-locate "^4.0.0"
     p-reduce "^2.0.0"
