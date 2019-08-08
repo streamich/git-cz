@@ -32,7 +32,7 @@
     "@semantic-release/github": "5.4.2",
     "@semantic-release/npm": "5.1.13",
     "any-shell-escape": "0.1.1",
-    "browserify": "16.3.0",
+    "browserify": "16.4.0",
     "chalk": "2.4.2",
     "commitizen": "2.10.1",
     "eslint": "4.19.1",
