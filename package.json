@@ -42,7 +42,7 @@
     "minimist": "1.2.0",
     "pkg": "4.4.0",
     "rimraf": "2.6.3",
-    "semantic-release": "15.13.19",
+    "semantic-release": "15.13.21",
     "signale": "1.4.0",
     "word-wrap": "1.2.3",
     "mocha": "6.2.0"
