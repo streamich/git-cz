@@ -29,8 +29,8 @@
   "devDependencies": {
     "@semantic-release/changelog": "3.0.4",
     "@semantic-release/git": "7.0.16",
-    "@semantic-release/github": "5.4.2",
-    "@semantic-release/npm": "5.1.13",
+    "@semantic-release/github": "5.4.3",
+    "@semantic-release/npm": "5.1.15",
     "any-shell-escape": "0.1.1",
     "browserify": "16.5.0",
     "chalk": "2.4.2",
@@ -42,7 +42,7 @@
     "minimist": "1.2.0",
     "pkg": "4.4.0",
     "rimraf": "2.7.1",
-    "semantic-release": "15.13.21",
+    "semantic-release": "15.13.24",
     "signale": "1.4.0",
     "word-wrap": "1.2.3",
     "mocha": "6.2.0"
