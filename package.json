@@ -38,7 +38,7 @@
     "eslint": "4.19.1",
     "eslint-config-mailonline": "9.0.0",
     "husky": "0.14.3",
-    "inquirer": "6.5.1",
+    "inquirer": "6.5.2",
     "minimist": "1.2.0",
     "pkg": "4.4.0",
     "rimraf": "2.7.1",
