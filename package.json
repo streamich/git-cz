@@ -30,7 +30,7 @@
     "@semantic-release/changelog": "3.0.4",
     "@semantic-release/git": "7.0.16",
     "@semantic-release/github": "5.5.0",
-    "@semantic-release/npm": "5.1.15",
+    "@semantic-release/npm": "5.2.0",
     "any-shell-escape": "0.1.1",
     "browserify": "16.5.0",
     "chalk": "2.4.2",
