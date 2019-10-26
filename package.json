@@ -27,6 +27,7 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
+    "semantic-release": "15.13.28",
     "@semantic-release/changelog": "3.0.5",
     "@semantic-release/git": "7.0.17",
     "@semantic-release/github": "5.5.5",
@@ -42,7 +43,6 @@
     "minimist": "1.2.0",
     "pkg": "4.4.0",
     "rimraf": "2.7.1",
-    "semantic-release": "15.13.28",
     "signale": "1.4.0",
     "word-wrap": "1.2.3",
     "mocha": "6.2.2"
@@ -60,41 +60,5 @@
   },
   "dependencies": {
     "global": "^4.3.2"
-  },
-  "release": {
-    "verifyConditions": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ],
-    "prepare": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ],
-    "publish": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git",
-      [
-        "@semantic-release/github",
-        {
-          "assets": [
-            {
-              "path": "binaries/cli-linux",
-              "label": "Linux binary"
-            },
-            {
-              "path": "binaries/cli-macos",
-              "label": "Mac binary"
-            },
-            {
-              "path": "binaries/cli-win.exe",
-              "label": "Windows binary"
-            }
-          ]
-        }
-      ]
-    ]
   }
 }
