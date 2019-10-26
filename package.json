@@ -27,10 +27,10 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "3.0.4",
-    "@semantic-release/git": "7.0.16",
-    "@semantic-release/github": "5.5.4",
-    "@semantic-release/npm": "5.2.0",
+    "@semantic-release/changelog": "3.0.5",
+    "@semantic-release/git": "7.0.17",
+    "@semantic-release/github": "5.5.5",
+    "@semantic-release/npm": "5.3.1",
     "any-shell-escape": "0.1.1",
     "browserify": "16.5.0",
     "chalk": "2.4.2",
@@ -42,7 +42,7 @@
     "minimist": "1.2.0",
     "pkg": "4.4.0",
     "rimraf": "2.7.1",
-    "semantic-release": "15.13.27",
+    "semantic-release": "15.13.28",
     "signale": "1.4.0",
     "word-wrap": "1.2.3",
     "mocha": "6.2.2"
