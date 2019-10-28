@@ -296,9 +296,9 @@
     parse-github-url "^1.0.1"
     url-join "^4.0.0"
 
-"@semantic-release/npm@5.3.1":
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.3.1.tgz#7ba5ad0112cf8bb624c4843779c104ea6613bcf5"
+"@semantic-release/npm@5.3.2":
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.3.2.tgz#87b24f7a6e441b7c75fa4e5158bdce694f06986b"
   dependencies:
     "@semantic-release/error" "^2.2.0"
     aggregate-error "^3.0.0"
