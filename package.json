@@ -27,7 +27,7 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "semantic-release": "15.13.28",
+    "semantic-release": "15.13.29",
     "@semantic-release/changelog": "3.0.5",
     "@semantic-release/git": "7.0.17",
     "@semantic-release/github": "5.5.5",
