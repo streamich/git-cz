@@ -42,7 +42,7 @@
     "inquirer": "6.5.2",
     "minimist": "1.2.0",
     "pkg": "4.4.0",
-    "rimraf": "2.7.1",
+    "rimraf": "3.0.0",
     "signale": "1.4.0",
     "word-wrap": "1.2.3",
     "mocha": "6.2.2"
