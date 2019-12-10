@@ -49,7 +49,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint",
-      "prepare-commit-msg": "exec < /dev/tty && node ./bin/git-cz.js || true"
+      "prepare-commit-msg": "exec < /dev/tty && node ./bin/git-cz.js --hook || true"
     }
   },
   "config": {

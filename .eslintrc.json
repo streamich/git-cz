@@ -3,6 +3,7 @@
   "rules": {
     "import/unambiguous": "off",
     "import/no-commonjs": "off",
+    "no-process-env": "off",
     "promise/prefer-await-to-then": "off",
     "strict": "off"
   }
