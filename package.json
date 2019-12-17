@@ -45,7 +45,8 @@
     "rimraf": "3.0.0",
     "signale": "1.4.0",
     "word-wrap": "1.2.3",
-    "mocha": "6.2.2"
+    "mocha": "6.2.2",
+    "inquirer-autocomplete-prompt": "^1.0.1"
   },
   "config": {
     "commitizen": {
@@ -59,7 +60,6 @@
     "backup": false
   },
   "dependencies": {
-    "global": "^4.3.2",
-    "inquirer-autocomplete-prompt": "^1.0.1"
+    "global": "^4.3.2"
   }
 }
