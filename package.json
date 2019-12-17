@@ -59,6 +59,7 @@
     "backup": false
   },
   "dependencies": {
-    "global": "^4.3.2"
+    "global": "^4.3.2",
+    "inquirer-autocomplete-prompt": "^1.0.1"
   }
 }
