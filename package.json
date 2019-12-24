@@ -27,7 +27,6 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "semantic-release": "15.13.31",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "7.0.18",
     "@semantic-release/github": "5.5.5",
@@ -40,13 +39,14 @@
     "eslint-config-mailonline": "9.0.0",
     "husky": "0.14.3",
     "inquirer": "6.5.2",
+    "inquirer-list-search-prompt": "^1.0.2",
     "minimist": "1.2.0",
+    "mocha": "6.2.2",
     "pkg": "4.4.0",
     "rimraf": "3.0.0",
+    "semantic-release": "15.13.31",
     "signale": "1.4.0",
-    "word-wrap": "1.2.3",
-    "mocha": "6.2.2",
-    "inquirer-autocomplete-prompt": "^1.0.1"
+    "word-wrap": "1.2.3"
   },
   "config": {
     "commitizen": {
