@@ -38,7 +38,7 @@
     "commitizen": "2.10.1",
     "eslint": "4.19.1",
     "eslint-config-mailonline": "9.0.0",
-    "husky": "0.14.3",
+    "husky": "4.0.10",
     "inquirer": "6.5.2",
     "minimist": "1.2.0",
     "pkg": "4.4.2",
