@@ -22,7 +22,6 @@
     "build:readme": "mmarkdown",
     "build:binaries": "mkdirp binaries && pkg lib/cli.js --out-path binaries",
     "test": "mocha",
-    "precommit": "yarn lint",
     "semantic-release": "semantic-release",
     "eslint": "eslint lib/*.js"
   },
@@ -39,7 +38,7 @@
     "commitizen": "2.10.1",
     "eslint": "4.19.1",
     "eslint-config-mailonline": "9.0.0",
-    "husky": "0.14.3",
+    "husky": "^4.0.10",
     "inquirer": "6.5.2",
     "inquirer-list-search-prompt": "^1.0.2",
     "minimist": "1.2.0",
@@ -49,6 +48,12 @@
     "semantic-release": "15.13.31",
     "signale": "1.4.0",
     "word-wrap": "1.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "prepare-commit-msg": "exec < /dev/tty && node ./lib/cli.js --hook || true"
+    }
   },
   "config": {
     "commitizen": {
