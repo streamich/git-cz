@@ -9,7 +9,7 @@ script:
 node_js:
   - '10'
 after_success:
-  - npx semantic-release
+  - yarn release
   - npx ci-scripts slack
   - npx ci-scripts github-post
 branches:
