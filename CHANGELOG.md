@@ -1,3 +1,32 @@
+# [4.0.0](https://github.com/streamich/git-cz/compare/v3.2.1...v4.0.0) (2020-01-16)
+
+
+### Bug Fixes
+
+* 🐛 Adhere to lerna settings for workspaces directory ([4151235](https://github.com/streamich/git-cz/commit/415123502b5f00e3988fc49b4643c945f91185e3)), closes [#85](https://github.com/streamich/git-cz/issues/85)
+* 🐛 fixes autocomplete prompt import ([91226ba](https://github.com/streamich/git-cz/commit/91226ba829723ebd15afec52eaf53bb8cc64e210))
+* 🐛 fixes scope's empty string answer issue ([53dd466](https://github.com/streamich/git-cz/commit/53dd4667be95b1f28e13a8aeb203b1a2c8762ccb))
+* 🐛 make semantic-release publish to NPM ([6f5c836](https://github.com/streamich/git-cz/commit/6f5c836256bc893b3e2a7e3b141842e03a790c4e))
+* 🐛 simplify semantic-release config ([3872978](https://github.com/streamich/git-cz/commit/387297890a597fd1ad2456e8948ac12fabc4bcb9))
+* remove emojis when disableEmoji is true ([62915be](https://github.com/streamich/git-cz/commit/62915be714fc9628c4dba06e37c59f4212e5a532))
+
+
+### Continuous Integration
+
+* 🎡 remove NPM semantic-release plugin for on release ([a9f23eb](https://github.com/streamich/git-cz/commit/a9f23eb96e45f8dba124a674bdf1c742fe51385e))
+
+
+### Features
+
+* 🎸 adds a feature to search for types ([f8c3452](https://github.com/streamich/git-cz/commit/f8c34521228460ffa72912012585acdbb6e40286))
+* 🎸 adds git hooks support ([80176cd](https://github.com/streamich/git-cz/commit/80176cd3735c6a8988335964cfb6dbbaccce4703)), closes [#79](https://github.com/streamich/git-cz/issues/79)
+* 🎸 adds scope search in scopes question ([70bf18b](https://github.com/streamich/git-cz/commit/70bf18bb02881e2c566cfa8a1cb1af20d59b2af2))
+
+
+### BREAKING CHANGES
+
+* 🧨 Release new major
+
 ## [3.2.1](https://github.com/streamich/git-cz/compare/v3.2.0...v3.2.1) (2019-07-01)
 
 
