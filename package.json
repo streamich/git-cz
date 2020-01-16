@@ -40,12 +40,13 @@
     "eslint-config-mailonline": "9.0.0",
     "husky": "0.14.3",
     "inquirer": "6.5.2",
+    "inquirer-list-search-prompt": "^1.0.2",
     "minimist": "1.2.0",
+    "mocha": "6.2.2",
     "pkg": "4.4.2",
     "rimraf": "3.0.0",
     "signale": "1.4.0",
-    "word-wrap": "1.2.3",
-    "mocha": "6.2.2"
+    "word-wrap": "1.2.3"
   },
   "config": {
     "commitizen": {
