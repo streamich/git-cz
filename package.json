@@ -26,11 +26,11 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "semantic-release": "15.13.31",
+    "semantic-release": "15.14.0",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "7.0.18",
-    "@semantic-release/github": "5.5.5",
-    "@semantic-release/npm": "5.3.4",
+    "@semantic-release/github": "5.5.8",
+    "@semantic-release/npm": "5.3.5",
     "any-shell-escape": "0.1.1",
     "browserify": "16.5.0",
     "chalk": "2.4.2",
@@ -40,7 +40,7 @@
     "husky": "^3.1.0",
     "inquirer": "6.5.2",
     "minimist": "1.2.0",
-    "pkg": "4.4.1",
+    "pkg": "4.4.2",
     "rimraf": "3.0.0",
     "signale": "1.4.0",
     "word-wrap": "1.2.3",
