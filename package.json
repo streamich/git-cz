@@ -22,14 +22,13 @@
     "build:readme": "mmarkdown",
     "build:binaries": "mkdirp binaries && pkg lib/cli.js --out-path binaries",
     "test": "mocha",
-    "semantic-release": "semantic-release",
+    "release": "semantic-release",
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
     "semantic-release": "15.14.0",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "7.0.18",
-    "@semantic-release/github": "5.5.8",
     "@semantic-release/npm": "5.3.5",
     "any-shell-escape": "0.1.1",
     "browserify": "16.5.0",
@@ -68,5 +67,17 @@
   },
   "dependencies": {
     "global": "^4.3.2"
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ]
   }
 }
