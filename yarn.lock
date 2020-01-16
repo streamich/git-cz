@@ -1120,7 +1120,7 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
 
-chai@^4.2.0:
+chai@4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/chai/-/chai-4.2.0.tgz#760aa72cf20e3795e84b12877ce0e83737aa29e5"
   integrity sha512-XQU3bhBukrOsQCuwZndwGcCVQHyZi53fQ6Ys1Fym7E4olpIqqZZhhoFJoaKVvV17lWQoXYwgWN2nF5crA8J2jw==
@@ -3280,7 +3280,7 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^4.0.10:
+husky@4.0.10:
   version "4.0.10"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.0.10.tgz#659b52c404d3163b943a73f6c1d454708c0226d8"
   integrity sha512-Ptm4k2DqOwxeK/kzu5RaJmNRoGvESrgDXObFcZ8aJZcyXyMBHhM2FqZj6zYKdetadmP3wCwxEHCBuB9xGlRp8A==
@@ -3415,7 +3415,7 @@ inline-source-map@~0.6.0:
   dependencies:
     source-map "~0.5.3"
 
-inquirer-list-search-prompt@^1.0.2:
+inquirer-list-search-prompt@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/inquirer-list-search-prompt/-/inquirer-list-search-prompt-1.0.2.tgz#aee9d698dbca47dd7e727413fbaed5f540475c19"
   integrity sha512-p2pxuhxCurxZbWkYydLaI+9f2qkSDQUB2MeIJ07jxNBqH/bkHcz7Kk78+Im/XnL1MdyHbh0KKMzjAHmeSLn7oA==
