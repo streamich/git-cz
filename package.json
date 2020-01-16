@@ -27,13 +27,13 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "semantic-release": "15.13.31",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "7.0.18",
     "@semantic-release/github": "5.5.5",
     "@semantic-release/npm": "5.3.4",
     "any-shell-escape": "0.1.1",
     "browserify": "16.5.0",
+    "chai": "^4.2.0",
     "chalk": "2.4.2",
     "commitizen": "2.10.1",
     "eslint": "4.19.1",
@@ -41,11 +41,12 @@
     "husky": "0.14.3",
     "inquirer": "6.5.2",
     "minimist": "1.2.0",
+    "mocha": "6.2.2",
     "pkg": "4.4.2",
     "rimraf": "3.0.0",
+    "semantic-release": "15.13.31",
     "signale": "1.4.0",
-    "word-wrap": "1.2.3",
-    "mocha": "6.2.2"
+    "word-wrap": "1.2.3"
   },
   "config": {
     "commitizen": {
