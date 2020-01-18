@@ -28,7 +28,7 @@
   "devDependencies": {
     "semantic-release": "15.14.0",
     "@semantic-release/changelog": "3.0.6",
-    "@semantic-release/git": "7.0.18",
+    "@semantic-release/git": "8.0.0",
     "any-shell-escape": "0.1.1",
     "browserify": "16.5.0",
     "chai": "4.2.0",
@@ -44,7 +44,7 @@
     "mocha": "6.2.2",
     "pkg": "4.4.2",
     "rimraf": "3.0.0",
-    "semantic-release": "15.13.31",
+    "semantic-release": "16.0.2",
     "signale": "1.4.0",
     "word-wrap": "1.2.3"
   },
