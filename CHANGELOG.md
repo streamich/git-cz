@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/streamich/git-cz/compare/v4.0.0...v4.1.0) (2020-01-18)
+
+
+### Features
+
+* use fuzzy search for scopes and types ([e6d615f](https://github.com/streamich/git-cz/commit/e6d615f6d1c3934c3b94a0126e32b777c5d4ae8f))
+
 # [4.0.0](https://github.com/streamich/git-cz/compare/v3.2.1...v4.0.0) (2020-01-16)
 
 
