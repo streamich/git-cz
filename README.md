@@ -144,7 +144,28 @@ module.exports = {
 };
 ```
 
-## Commit Message Format
+## Non-interactive mode
+
+Using `--non-interactive` flag you can run `git-cz` non-interactive mode.
+
+For example:
+
+```
+git-cz --non-interactive --type=feat --subject="add onClick prop to component"
+```
+
+CLI parameters:
+
+- `--type`
+- `--subject`
+- `--scope`
+- `--body`
+- `--breaking`
+- `--issues`
+- `--lerna`
+
+
+## Commit message format
 
 * A commit message consists of a **header**, **body** and **footer**.
 * The header has a **type** and a **subject**:
