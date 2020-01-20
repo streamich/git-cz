@@ -1,3 +1,17 @@
+# [4.2.0](https://github.com/streamich/git-cz/compare/v4.1.0...v4.2.0) (2020-01-20)
+
+
+### Bug Fixes
+
+* 🐛 do not format body as undefined ([28d6e77](https://github.com/streamich/git-cz/commit/28d6e77ce7592d03c411b3f3c9cc69d1ea7c0e53))
+
+
+### Features
+
+* 🎸 Allow emojis in non-interactive and set defaults ([08cf19c](https://github.com/streamich/git-cz/commit/08cf19c36de6c34b4502435d9b12097474db5829))
+* 🎸 can set answers through CLI in default mode ([99238c2](https://github.com/streamich/git-cz/commit/99238c2c1d2c6ed2f5ee209261c297ef4feed712))
+* 🎸 non-interactive mode ([61b40db](https://github.com/streamich/git-cz/commit/61b40db85d668d1a7aa62588f18ba2ec15ba4667))
+
 # [4.1.0](https://github.com/streamich/git-cz/compare/v4.0.0...v4.1.0) (2020-01-18)
 
 
