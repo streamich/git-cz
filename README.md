@@ -164,6 +164,14 @@ CLI parameters:
 - `--issues`
 - `--lerna`
 
+## Disable Emoji 
+Using `--disable-emoji` flag will disable emoji.
+
+For example:
+
+```
+git-cz --disable-emoji
+```
 
 ## Commit message format
 
