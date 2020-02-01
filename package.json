@@ -26,7 +26,6 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "semantic-release": "15.14.0",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "8.0.0",
     "any-shell-escape": "0.1.1",
@@ -66,7 +65,8 @@
     "backup": false
   },
   "dependencies": {
-    "global": "^4.3.2"
+    "global": "^4.3.2",
+    "meow": "^6.0.0"
   },
   "release": {
     "verifyConditions": [
