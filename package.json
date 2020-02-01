@@ -39,13 +39,14 @@
     "husky": "4.2.1",
     "inquirer": "6.5.2",
     "inquirer-list-search-prompt": "1.0.2",
-    "minimist": "1.2.0",
     "mocha": "6.2.2",
     "pkg": "4.4.2",
     "rimraf": "3.0.1",
     "semantic-release": "16.0.4",
     "signale": "1.4.0",
-    "word-wrap": "1.2.3"
+    "word-wrap": "1.2.3",
+    "global": "^4.3.2",
+    "meow": "^6.0.0"
   },
   "husky": {
     "hooks": {
@@ -63,10 +64,6 @@
     "out": "./README.md",
     "scripts": "./build/readme.js",
     "backup": false
-  },
-  "dependencies": {
-    "global": "^4.3.2",
-    "meow": "^6.0.0"
   },
   "release": {
     "verifyConditions": [
