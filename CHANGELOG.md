@@ -1,3 +1,10 @@
+## [4.3.1](https://github.com/streamich/git-cz/compare/v4.3.0...v4.3.1) (2020-02-03)
+
+
+### Bug Fixes
+
+* 🐛 fix git commit error ([b116ba0](https://github.com/streamich/git-cz/commit/b116ba0ed4206a173dfb63206ddf7c058e2046ba))
+
 # [4.3.0](https://github.com/streamich/git-cz/compare/v4.2.0...v4.3.0) (2020-02-02)
 
 
