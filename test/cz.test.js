@@ -1,4 +1,4 @@
-const cz = require('../dist/cz');
+const cz = require('../lib/cz');
 
 describe('commitizen', () => {
   it('exports prompter function', () => {
