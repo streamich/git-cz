@@ -2193,10 +2193,10 @@ eslint-ast-utils@^1.0.0:
     lodash.get "^4.4.2"
     lodash.zip "^4.2.0"
 
-eslint-config-mailonline@9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-mailonline/-/eslint-config-mailonline-9.0.0.tgz#2013940b983d018b5204d9c14212c7d4b70beed8"
-  integrity sha512-bojTrsF2DGn9/YgxQj9/z5f3LpIdQbz/sJ0iNTHCsNq3gfObfWnHvAmKhS+oBEoQ6BFpkk/Db+3ms9LueRI0jg==
+eslint-config-mailonline@9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-mailonline/-/eslint-config-mailonline-9.0.1.tgz#cf6d741ba6b920cee348474adaab87860251dc45"
+  integrity sha512-+aNcE4v2RRE1Ast+JxbQxO6TdMCcFRZXsoRxNxFWHmwFMdEnPh5nUqlFiUq+CEa+gKjPhpLa618sLu3h/934EQ==
   dependencies:
     babel-eslint "^8.0.2"
     eslint-plugin-babel "^4.1.2"
