@@ -41,7 +41,7 @@
     "inquirer": "6.5.2",
     "inquirer-list-search-prompt": "1.0.2",
     "minimist": "1.2.5",
-    "mocha": "6.2.2",
+    "mocha": "6.2.3",
     "pkg": "4.4.4",
     "rimraf": "3.0.2",
     "semantic-release": "16.0.4",
