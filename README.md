@@ -66,6 +66,7 @@ Below is default config:
 
 ```js
 module.exports = {
+  enableWritingScopes: false,
   "disableEmoji": false,
   "list": [
     "test",
@@ -203,6 +204,9 @@ Must be one of the following:
 - `ci` &mdash; CI related changes
 - `perf` &mdash; A code change that improves performance
 
+### Scopes
+The scope is the scope of changes on the component you are working on. E.g. "Controllers", "API" etc.
+By default this list and you must add scopes to the ist. If `enableWritingScopes:true` is set you can input a custom scope during commiting.
 
 ### Subject
 
