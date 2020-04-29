@@ -1,3 +1,18 @@
+# [5.0.0](https://github.com/stanlindsey/git-cz/compare/v4.3.1...v5.0.0) (2020-04-29)
+
+
+### Features
+
+* 🎸 add ability to support writing new scopes during commit ([1345146](https://github.com/stanlindsey/git-cz/commit/1345146b3084b94819e7edcc59f464d8ccc5ede5))
+* 🎸 automatically infer type list from Types object ([5f13da4](https://github.com/stanlindsey/git-cz/commit/5f13da47c9a0b5174ff510a35de85c5fb01e5997))
+* 🎸 recursively search parent folders for config file ([857aab2](https://github.com/stanlindsey/git-cz/commit/857aab2392cb323fb4bda97636463c4df1c4a364)), closes [#60](https://github.com/stanlindsey/git-cz/issues/60)
+
+
+### BREAKING CHANGES
+
+* 🧨 we no longer repsect the config.list ordering of types, instead relying
+on the ordering of the config.types instead.
+
 ## [4.3.1](https://github.com/streamich/git-cz/compare/v4.3.0...v4.3.1) (2020-02-03)
 
 
