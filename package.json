@@ -16,7 +16,7 @@
   "scripts": {
     "lint": "yarn eslint",
     "clean": "rimraf dist binaries",
-    "build": "yarn build:cli && yarn build:cz",
+    "build": "yarn build:cli && yarn build:cz && yarn build:readme",
     "build:cli": "browserify --node -o dist/cli.js lib/cli.js",
     "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
     "build:readme": "mmarkdown",
@@ -41,7 +41,9 @@
     "inquirer": "6.5.2",
     "inquirer-list-search-prompt": "1.0.2",
     "minimist": "1.2.5",
+    "mmarkdown": "^1.0.0",
     "mocha": "6.2.2",
+    "pad-right": "^0.2.2",
     "pkg": "4.4.4",
     "rimraf": "3.0.2",
     "semantic-release": "16.0.4",
