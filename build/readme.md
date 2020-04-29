@@ -6,23 +6,21 @@
 ### Without installation
 
 ```shell
-npx git-cz
+npx @stanlindsey/git-cz
 ```
-
 
 ### Install globally standalone
 
 ```shell
-npm install -g git-cz
+npm install -g @stanlindsey/git-cz
 git-cz
 ```
-
 
 ### Install locally with Commitizen
 
 ```shell
 npm install -g commitizen
-npm install --save-dev git-cz
+npm install --save-dev @stanlindsey/git-cz
 ```
 
 `package.json`:
@@ -31,7 +29,7 @@ npm install --save-dev git-cz
 {
   "config": {
     "commitizen": {
-      "path": "git-cz"
+      "path": "@stanlindsey/git-cz"
     }
   },
 }
@@ -43,12 +41,11 @@ run:
 git cz
 ```
 
-
 ### Install globally with Commitizen
 
 ```shell
 npm install -g commitizen git-cz
-commitizen init git-cz --save-dev --save-exact
+commitizen init @stanlindsey/git-cz --save-dev --save-exact
 ```
 
 run:
@@ -58,20 +55,35 @@ git cz
 ```
 
 
-## Example
-
-![](./docs/example.png)
-
-
 ## Custom config
 
-You can provide custom configuration in `changelog.congfig.js` file
-in your repo. Below is default config:
+You can provide a custom configuration in a `changelog.config.js` file in your repo, or in any parent folder.
+git-cz will search for the closest config file.
+Below is default config:
 
 ```mmd
 return scripts.config();
 ```
 
+## Non-interactive mode
+
+Using `--non-interactive` flag you can run `git-cz` non-interactive mode.
+
+For example:
+
+```
+git-cz --non-interactive --type=feat --subject="add onClick prop to component"
+```
+
+CLI parameters:
+
+- `--type`
+- `--subject`
+- `--scope`
+- `--body`
+- `--breaking`
+- `--issues`
+- `--lerna`
 
 ## Commit Message Format
 
@@ -104,6 +116,10 @@ Must be one of the following:
 return scripts.types();
 ```
 
+### Scopes
+The scope is the scope of changes on the component you are working on. E.g. "Controllers", "API" etc.
+By default this list and you must add scopes to the ist. If `enableWritingScopes:true` is set you can input a custom scope during commiting.
+
 ### Subject
 
 The subject contains succinct description of the change:
@@ -133,7 +149,7 @@ The footer is the place to reference any tasks related to this commit.
 ## Why this Fork?
 
 ```
-npm i -g git-cz
+npm i -g @stanlindsey/git-cz
 added 1 package in 0.612s
 ```
 

@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/streamich/git-cz.git"
+    "url": "git+ssh://git@github.com/stanlindsey/git-cz.git"
   },
-  "homepage": "https://github.com/streamich/git-cz",
+  "homepage": "https://github.com/stanlindsey/git-cz",
   "license": "Unlicense",
   "scripts": {
     "lint": "yarn eslint",

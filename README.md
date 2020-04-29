@@ -9,13 +9,13 @@
 ### Without installation
 
 ```shell
-npx git-cz
+npx @stanlindsey/git-cz
 ```
 
 ### Install globally standalone
 
 ```shell
-npm install -g git-cz
+npm install -g @stanlindsey/git-cz
 git-cz
 ```
 
@@ -23,7 +23,7 @@ git-cz
 
 ```shell
 npm install -g commitizen
-npm install --save-dev git-cz
+npm install --save-dev @stanlindsey/git-cz
 ```
 
 `package.json`:
@@ -32,7 +32,7 @@ npm install --save-dev git-cz
 {
   "config": {
     "commitizen": {
-      "path": "git-cz"
+      "path": "@stanlindsey/git-cz"
     }
   },
 }
@@ -48,7 +48,7 @@ git cz
 
 ```shell
 npm install -g commitizen git-cz
-commitizen init git-cz --save-dev --save-exact
+commitizen init @stanlindsey/git-cz --save-dev --save-exact
 ```
 
 run:
@@ -233,7 +233,7 @@ The footer is the place to reference any tasks related to this commit.
 ## Why this Fork?
 
 ```
-npm i -g git-cz
+npm i -g @stanlindsey/git-cz
 added 1 package in 0.612s
 ```
 
