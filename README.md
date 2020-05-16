@@ -60,8 +60,9 @@ git cz
 
 ## Custom config
 
-You can provide custom configuration in `changelog.config.js` file
-in your repo. Below is default config:
+You can provide a custom configuration in a `changelog.config.js` file in your repo, or in any parent folder.
+git-cz will search for the closest config file.
+Below is default config:
 
 ```js
 module.exports = {
@@ -164,6 +165,14 @@ CLI parameters:
 - `--issues`
 - `--lerna`
 
+## Disable Emoji 
+Using `--disable-emoji` flag will disable emoji.
+
+For example:
+
+```
+git-cz --disable-emoji
+```
 
 ## Commit message format
 
@@ -242,4 +251,3 @@ Installs in 0.6s vs 31.1s.
 npm i -g mol-conventional-changelog
 added 345 packages in 31.076s
 ```
-
