@@ -9,6 +9,7 @@ exports[`git-cz --help 1`] = `
     options:
         -h, --help          show usage information
         -v, --version       print version info and exit
+        --disable-emoji     don't add emoji to commit title
         --non-interactive   run git-cz in non-interactive mode
 
     non-interactive mode options:
