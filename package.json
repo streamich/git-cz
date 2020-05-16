@@ -26,25 +26,25 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "semantic-release": "15.14.0",
     "@semantic-release/changelog": "3.0.6",
     "@semantic-release/git": "8.0.0",
     "any-shell-escape": "0.1.1",
-    "browserify": "16.5.0",
+    "browserify": "16.5.1",
     "chai": "4.2.0",
     "chalk": "2.4.2",
     "commitizen": "2.10.1",
     "eslint": "4.19.1",
-    "eslint-config-mailonline": "9.0.0",
+    "eslint-config-mailonline": "9.0.1",
     "fuzzy": "0.1.3",
-    "husky": "4.2.0",
+    "global": "4.4.0",
+    "husky": "4.2.5",
     "inquirer": "6.5.2",
     "inquirer-list-search-prompt": "1.0.2",
-    "minimist": "1.2.0",
-    "mocha": "6.2.2",
-    "pkg": "4.4.2",
-    "rimraf": "3.0.0",
-    "semantic-release": "16.0.3",
+    "minimist": "1.2.5",
+    "mocha": "6.2.3",
+    "pkg": "4.4.8",
+    "rimraf": "3.0.2",
+    "semantic-release": "16.0.4",
     "signale": "1.4.0",
     "word-wrap": "1.2.3"
   },
@@ -64,9 +64,6 @@
     "out": "./README.md",
     "scripts": "./build/readme.js",
     "backup": false
-  },
-  "dependencies": {
-    "global": "^4.3.2"
   },
   "release": {
     "verifyConditions": [

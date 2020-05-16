@@ -1,3 +1,18 @@
+## [4.3.1](https://github.com/streamich/git-cz/compare/v4.3.0...v4.3.1) (2020-02-03)
+
+
+### Bug Fixes
+
+* 🐛 fix git commit error ([b116ba0](https://github.com/streamich/git-cz/commit/b116ba0ed4206a173dfb63206ddf7c058e2046ba))
+
+# [4.3.0](https://github.com/streamich/git-cz/compare/v4.2.0...v4.3.0) (2020-02-02)
+
+
+### Features
+
+* 🎸 add help & version flags ([799fff2](https://github.com/streamich/git-cz/commit/799fff2d9da4ec04ad7ee85b01172a038020ae89))
+* 🎸 improve help screen ([1838c1c](https://github.com/streamich/git-cz/commit/1838c1c5cb96d37b116234bb1ebe06721035ca46))
+
 # [4.2.0](https://github.com/streamich/git-cz/compare/v4.1.0...v4.2.0) (2020-01-20)
 
 
