@@ -1,3 +1,11 @@
+# [4.5.0](https://github.com/streamich/git-cz/compare/v4.4.1...v4.5.0) (2020-05-16)
+
+
+### Features
+
+* 🎸 manually bump version ([fb05bfb](https://github.com/streamich/git-cz/commit/fb05bfb03ee428ef97b397873c9e88da2902212a))
+* 🎸 recursively search parent folders for config file ([ce04676](https://github.com/streamich/git-cz/commit/ce0467639c56de19f0c9f227d86ef06b570f6790)), closes [#60](https://github.com/streamich/git-cz/issues/60)
+
 ## [4.4.1](https://github.com/streamich/git-cz/compare/v4.4.0...v4.4.1) (2020-05-16)
 
 
