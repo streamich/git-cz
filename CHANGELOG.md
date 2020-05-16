@@ -1,3 +1,10 @@
+## [4.4.1](https://github.com/streamich/git-cz/compare/v4.4.0...v4.4.1) (2020-05-16)
+
+
+### Bug Fixes
+
+* manually update version ([811025c](https://github.com/streamich/git-cz/commit/811025c962eab12af792c1d071438f26785266fb))
+
 # [4.4.0](https://github.com/streamich/git-cz/compare/v4.3.1...v4.4.0) (2020-05-16)
 
 
