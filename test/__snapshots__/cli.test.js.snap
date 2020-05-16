@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`git-cz --help 1`] = `
+"
+    Semantic emojified git commit, git-cz
+
+    Usage: git-cz [options]
+
+    options:
+        -h, --help          show usage information
+        -v, --version       print version info and exit
+        --disable-emoji     don't add emoji to commit title
+        --non-interactive   run git-cz in non-interactive mode
+
+    non-interactive mode options:
+        --type              type of the commit, defaults to \\"chore\\"
+        --subject           message of the commit, defaults to \\"automated commit\\"
+        --scope             semantic commit scope
+        --body              extended description of the commit
+        --breaking          description of breaking changes, if any
+        --issues            GitHub issues this commit closed, e.g \\"#123\\"
+        --lerna             Lerna mono-repo packages this commit affects
+
+"
+`;
+
+exports[`git-cz --non-interactive 1`] = `
+"Running in dry mode.
+Will execute command:
+git commit --message 'chore: 🤖 automated commit'
+"
+`;
