@@ -1,3 +1,11 @@
+# [4.4.0](https://github.com/streamich/git-cz/compare/v4.3.1...v4.4.0) (2020-05-16)
+
+
+### Features
+
+* 🎸 add --disable-emoji to --help and parse from CLI ([82dd0c9](https://github.com/streamich/git-cz/commit/82dd0c94ba13c9694d258a9c710f7c94409fa327))
+* 🎸 add disable emoji flag ([52a43d9](https://github.com/streamich/git-cz/commit/52a43d95d66a5e0d4a1e1fd92993bf11de102a35))
+
 ## [4.3.1](https://github.com/streamich/git-cz/compare/v4.3.0...v4.3.1) (2020-02-03)
 
 
