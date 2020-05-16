@@ -21,7 +21,7 @@
     "build:cz": "browserify --node -o dist/cz.js --standalone prompter lib/cz.js",
     "build:readme": "mmarkdown",
     "build:binaries": "mkdirp binaries && pkg lib/cli.js --out-path binaries",
-    "test": "jest",
+    "test": "jest --maxWorkers 2",
     "test:dev": "jest --watch",
     "test:coverage":"jest --coverage",
     "release": "semantic-release",
