@@ -42,7 +42,7 @@
     "husky": "4.2.5",
     "inquirer": "6.5.2",
     "inquirer-list-search-prompt": "1.0.2",
-    "jest": "25.1.0",
+    "jest": "25.5.4",
     "minimist": "1.2.5",
     "mocha": "6.2.3",
     "pkg": "4.4.8",
