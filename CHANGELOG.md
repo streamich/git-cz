@@ -1,3 +1,15 @@
+# [4.6.0](https://github.com/streamich/git-cz/compare/v4.5.0...v4.6.0) (2020-05-25)
+
+
+### Bug Fixes
+
+* 🐛 test when in --dry-run mode ([1697c56](https://github.com/streamich/git-cz/commit/1697c561e8edc613d6087ab2ec84ab7617c0c1e5))
+
+
+### Features
+
+* 🎸 check for staged files ([c283ad3](https://github.com/streamich/git-cz/commit/c283ad3fac13eaf00a899b49da474c7608a61708))
+
 # [4.5.0](https://github.com/streamich/git-cz/compare/v4.4.1...v4.5.0) (2020-05-16)
 
 
