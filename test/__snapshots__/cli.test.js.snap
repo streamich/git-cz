@@ -2,7 +2,7 @@
 
 exports[`git-cz --help 1`] = `
 "
-    Semantic emojified git commit, git-cz
+    Semantic emojified git commit, git-cz.
 
     Usage: git-cz [options]
 
