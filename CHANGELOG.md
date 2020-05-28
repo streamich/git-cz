@@ -1,3 +1,10 @@
+## [4.6.1](https://github.com/streamich/git-cz/compare/v4.6.0...v4.6.1) (2020-05-27)
+
+
+### Bug Fixes
+
+* release revert of checking for staged files ([8a6ac6e](https://github.com/streamich/git-cz/commit/8a6ac6e3df1411bf910bb79360742aa34b1bc2a2))
+
 # [4.6.0](https://github.com/streamich/git-cz/compare/v4.5.0...v4.6.0) (2020-05-25)
 
 
