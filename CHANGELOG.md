@@ -1,3 +1,11 @@
+## [4.6.2](https://github.com/streamich/git-cz/compare/v4.6.1...v4.6.2) (2020-05-28)
+
+
+### Bug Fixes
+
+* 🐛 check for staged files ([78dec95](https://github.com/streamich/git-cz/commit/78dec9516b56cda86727534c76cf4f20f4f008c3))
+* 🐛 failing test (execSync not defined) ([b9b6969](https://github.com/streamich/git-cz/commit/b9b6969c05fe5d1dfc2687fa471190bde2a84c83))
+
 ## [4.6.1](https://github.com/streamich/git-cz/compare/v4.6.0...v4.6.1) (2020-05-27)
 
 
