@@ -4,6 +4,7 @@
     "import/unambiguous": "off",
     "import/no-commonjs": "off",
     "promise/prefer-await-to-then": "off",
-    "strict": "off"
+    "strict": "off",
+    "comma-dangle": "off"
   }
 }
