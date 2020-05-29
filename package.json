@@ -23,7 +23,7 @@
     "build:binaries": "mkdirp binaries && pkg lib/cli.js --out-path binaries",
     "test": "jest --maxWorkers 2",
     "test:dev": "jest --watch",
-    "test:coverage":"jest --coverage",
+    "test:coverage": "jest --coverage",
     "release": "semantic-release",
     "eslint": "eslint lib/*.js"
   },
