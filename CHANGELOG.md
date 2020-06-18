@@ -1,3 +1,10 @@
+# [4.7.0](https://github.com/streamich/git-cz/compare/v4.6.2...v4.7.0) (2020-06-18)
+
+
+### Features
+
+* 🎸 exit process when no files staged ([9fb4844](https://github.com/streamich/git-cz/commit/9fb4844758226798444ee74e16a0df1f3d9bc25b))
+
 ## [4.6.2](https://github.com/streamich/git-cz/compare/v4.6.1...v4.6.2) (2020-05-28)
 
 
