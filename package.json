@@ -49,8 +49,7 @@
     "rimraf": "3.0.2",
     "semantic-release": "16.0.4",
     "signale": "1.4.0",
-    "spawncommand": "2.2.0",
-    "word-wrap": "1.2.3"
+    "spawncommand": "2.2.0"
   },
   "husky": {
     "hooks": {
