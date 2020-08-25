@@ -102,7 +102,7 @@ describe('formatCommitMessage()', () => {
   it('formats correctly a basic message ("feat" type, emoji, and message)', () => {
     const message = formatCommitMessage({...defaultState});
 
-    expect(message).to.equal('feat: 🎸 First commit');
+    expect(message).to.eql(['feat: 🎸 First commit']);
   });
 
   it('does not include emoji, if emojis disabled in config', () => {
@@ -114,6 +114,6 @@ describe('formatCommitMessage()', () => {
       }
     });
 
-    expect(message).to.equal('feat: First commit');
+    expect(message).to.eql(['feat: First commit']);
   });
 });
