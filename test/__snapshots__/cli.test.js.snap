@@ -28,5 +28,7 @@ exports[`git-cz --non-interactive 1`] = `
 "Running in dry mode.
 Will execute command:
 git commit --message 'chore: 🤖 automated commit'
+Message:
+chore: 🤖 automated commit
 "
 `;
