@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@semantic-release/changelog": "3.0.6",
-    "@semantic-release/git": "8.0.0",
+    "@semantic-release/git": "9.0.0",
     "any-shell-escape": "0.1.1",
     "browserify": "16.5.2",
     "chai": "4.2.0",
