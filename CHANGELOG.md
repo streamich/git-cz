@@ -1,3 +1,10 @@
+## [4.7.1](https://github.com/streamich/git-cz/compare/v4.7.0...v4.7.1) (2020-08-26)
+
+
+### Bug Fixes
+
+* 🐛 ignore "staged files check" when -a or --amend is passed ([206274f](https://github.com/streamich/git-cz/commit/206274ff1cfab9180fa3298f8cb9408e4971feca)), closes [#189](https://github.com/streamich/git-cz/issues/189)
+
 # [4.7.0](https://github.com/streamich/git-cz/compare/v4.6.2...v4.7.0) (2020-06-18)
 
 
