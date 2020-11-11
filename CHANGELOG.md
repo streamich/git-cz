@@ -1,3 +1,10 @@
+## [4.7.2](https://github.com/streamich/git-cz/compare/v4.7.1...v4.7.2) (2020-11-11)
+
+
+### Bug Fixes
+
+* 🐛 disable-emoji config being overwritten by default ([#211](https://github.com/streamich/git-cz/issues/211)) ([eb9eb06](https://github.com/streamich/git-cz/commit/eb9eb06004579a0f73eaa7852c22e790414e3ddb)), closes [#207](https://github.com/streamich/git-cz/issues/207)
+
 ## [4.7.1](https://github.com/streamich/git-cz/compare/v4.7.0...v4.7.1) (2020-08-26)
 
 
