@@ -1,3 +1,10 @@
+## [4.7.3](https://github.com/streamich/git-cz/compare/v4.7.2...v4.7.3) (2020-11-11)
+
+
+### Bug Fixes
+
+* 🐛 multiple lines on Windows ([#210](https://github.com/streamich/git-cz/issues/210)) ([838d47b](https://github.com/streamich/git-cz/commit/838d47b6c4fedf0d19d50ecf0e48a3afd22ba308)), closes [#188](https://github.com/streamich/git-cz/issues/188) [#197](https://github.com/streamich/git-cz/issues/197)
+
 ## [4.7.2](https://github.com/streamich/git-cz/compare/v4.7.1...v4.7.2) (2020-11-11)
 
 
