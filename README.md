@@ -10,6 +10,8 @@
 
 ```shell
 npx git-cz
+# or
+npx git-cz -e
 ```
 
 ### Install globally standalone
@@ -17,6 +19,8 @@ npx git-cz
 ```shell
 npm install -g git-cz
 git-cz
+# or 
+git-cz -e
 ```
 
 ### Install locally with Commitizen

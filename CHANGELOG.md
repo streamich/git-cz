@@ -1,3 +1,38 @@
+## [4.7.4](https://github.com/streamich/git-cz/compare/v4.7.3...v4.7.4) (2020-11-18)
+
+
+### Bug Fixes
+
+* 🐛 add config option to change closed issue message ([#218](https://github.com/streamich/git-cz/issues/218)) ([dd88ce9](https://github.com/streamich/git-cz/commit/dd88ce967abed710c0fd3b784085567e5a2e0f4b)), closes [#215](https://github.com/streamich/git-cz/issues/215)
+
+## [4.7.3](https://github.com/streamich/git-cz/compare/v4.7.2...v4.7.3) (2020-11-11)
+
+
+### Bug Fixes
+
+* 🐛 multiple lines on Windows ([#210](https://github.com/streamich/git-cz/issues/210)) ([838d47b](https://github.com/streamich/git-cz/commit/838d47b6c4fedf0d19d50ecf0e48a3afd22ba308)), closes [#188](https://github.com/streamich/git-cz/issues/188) [#197](https://github.com/streamich/git-cz/issues/197)
+
+## [4.7.2](https://github.com/streamich/git-cz/compare/v4.7.1...v4.7.2) (2020-11-11)
+
+
+### Bug Fixes
+
+* 🐛 disable-emoji config being overwritten by default ([#211](https://github.com/streamich/git-cz/issues/211)) ([eb9eb06](https://github.com/streamich/git-cz/commit/eb9eb06004579a0f73eaa7852c22e790414e3ddb)), closes [#207](https://github.com/streamich/git-cz/issues/207)
+
+## [4.7.1](https://github.com/streamich/git-cz/compare/v4.7.0...v4.7.1) (2020-08-26)
+
+
+### Bug Fixes
+
+* 🐛 ignore "staged files check" when -a or --amend is passed ([206274f](https://github.com/streamich/git-cz/commit/206274ff1cfab9180fa3298f8cb9408e4971feca)), closes [#189](https://github.com/streamich/git-cz/issues/189)
+
+# [4.7.0](https://github.com/streamich/git-cz/compare/v4.6.2...v4.7.0) (2020-06-18)
+
+
+### Features
+
+* 🎸 exit process when no files staged ([9fb4844](https://github.com/streamich/git-cz/commit/9fb4844758226798444ee74e16a0df1f3d9bc25b))
+
 ## [4.6.2](https://github.com/streamich/git-cz/compare/v4.6.1...v4.6.2) (2020-05-28)
 
 
