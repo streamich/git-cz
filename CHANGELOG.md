@@ -1,3 +1,10 @@
+## [4.7.4](https://github.com/streamich/git-cz/compare/v4.7.3...v4.7.4) (2020-11-18)
+
+
+### Bug Fixes
+
+* 🐛 add config option to change closed issue message ([#218](https://github.com/streamich/git-cz/issues/218)) ([dd88ce9](https://github.com/streamich/git-cz/commit/dd88ce967abed710c0fd3b784085567e5a2e0f4b)), closes [#215](https://github.com/streamich/git-cz/issues/215)
+
 ## [4.7.3](https://github.com/streamich/git-cz/compare/v4.7.2...v4.7.3) (2020-11-11)
 
 
