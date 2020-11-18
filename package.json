@@ -33,7 +33,7 @@
     "any-shell-escape": "0.1.1",
     "browserify": "17.0.0",
     "chai": "4.2.0",
-    "chalk": "2.4.2",
+    "chalk": "4.1.0",
     "commitizen": "2.10.1",
     "eslint": "7.10.0",
     "eslint-plugin-babel": "5.3.1",
