@@ -6,6 +6,7 @@ const defaultConfig = {
   disableEmoji: false,
   breakingChangePrefix: '🧨 ',
   closedIssuePrefix: '✅ ',
+  closedIssueMessage: 'Closes: ',
   commitMessageFormat: '<type><(scope)>: <emoji><subject>',
   list: [
     'test',

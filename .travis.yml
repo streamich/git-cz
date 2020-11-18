@@ -8,6 +8,8 @@ script:
   - yarn test
 node_js:
   - '10'
+  - '12'
+  - '14'
 after_success:
   - yarn release
   - npx ci-scripts slack
