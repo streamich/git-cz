@@ -1,3 +1,11 @@
+## [4.7.5](https://github.com/streamich/git-cz/compare/v4.7.4...v4.7.5) (2020-11-30)
+
+
+### Bug Fixes
+
+* 🐛 pad-right ([1891a62](https://github.com/streamich/git-cz/commit/1891a62641fd978c3f9b46dedfcc1123d5490fde))
+* 🐛 pad-right ([94b063c](https://github.com/streamich/git-cz/commit/94b063c69cef87b3f0a5dc688a6a0c18f1daaa96))
+
 ## [4.7.4](https://github.com/streamich/git-cz/compare/v4.7.3...v4.7.4) (2020-11-18)
 
 
