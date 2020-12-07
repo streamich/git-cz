@@ -1,3 +1,10 @@
+## [4.7.6](https://github.com/streamich/git-cz/compare/v4.7.5...v4.7.6) (2020-12-07)
+
+
+### Bug Fixes
+
+* 🐛 move check for git folder to top ([cdf142c](https://github.com/streamich/git-cz/commit/cdf142cb8bbdc2186c04be31a443e79a377565d8))
+
 ## [4.7.5](https://github.com/streamich/git-cz/compare/v4.7.4...v4.7.5) (2020-11-30)
 
 
