@@ -4,6 +4,7 @@ const formatCommitMessage = require('../lib/formatCommitMessage');
 
 const defaultConfig = {
   disableEmoji: false,
+  format: '{type} {scope}: {subject}',
   breakingChangePrefix: '🧨 ',
   closedIssuePrefix: '✅ ',
   closedIssueMessage: 'Closes: ',

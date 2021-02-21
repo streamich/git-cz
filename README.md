@@ -1,10 +1,8 @@
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
-
 # git-cz
 
 ![image](https://user-images.githubusercontent.com/9773803/49760520-fa6c6f00-fcc4-11e8-84c4-80727f071487.png)
-
 
 ### Without installation
 
@@ -19,7 +17,7 @@ npx git-cz -e
 ```shell
 npm install -g git-cz
 git-cz
-# or 
+# or
 git-cz -e
 ```
 
@@ -38,7 +36,7 @@ npm install --save-dev git-cz
     "commitizen": {
       "path": "git-cz"
     }
-  },
+  }
 }
 ```
 
@@ -61,7 +59,6 @@ run:
 git cz
 ```
 
-
 ## Custom config
 
 You can provide a custom configuration in a `changelog.config.js` file in your repo, or in any parent folder.
@@ -70,80 +67,63 @@ Below is default config:
 
 ```js
 module.exports = {
-  "disableEmoji": false,
-  "list": [
-    "test",
-    "feat",
-    "fix",
-    "chore",
-    "docs",
-    "refactor",
-    "style",
-    "ci",
-    "perf"
-  ],
-  "maxMessageLength": 64,
-  "minMessageLength": 3,
-  "questions": [
-    "type",
-    "scope",
-    "subject",
-    "body",
-    "breaking",
-    "issues",
-    "lerna"
-  ],
-  "scopes": [],
-  "types": {
-    "chore": {
-      "description": "Build process or auxiliary tool changes",
-      "emoji": "🤖",
-      "value": "chore"
+  disableEmoji: false,
+  format: '{type} {scope}: {subject}',
+  list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
+  maxMessageLength: 64,
+  minMessageLength: 3,
+  questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
+  scopes: [],
+  types: {
+    chore: {
+      description: 'Build process or auxiliary tool changes',
+      emoji: '🤖',
+      value: 'chore'
     },
-    "ci": {
-      "description": "CI related changes",
-      "emoji": "🎡",
-      "value": "ci"
+    ci: {
+      description: 'CI related changes',
+      emoji: '🎡',
+      value: 'ci'
     },
-    "docs": {
-      "description": "Documentation only changes",
-      "emoji": "✏️",
-      "value": "docs"
+    docs: {
+      description: 'Documentation only changes',
+      emoji: '✏️',
+      value: 'docs'
     },
-    "feat": {
-      "description": "A new feature",
-      "emoji": "🎸",
-      "value": "feat"
+    feat: {
+      description: 'A new feature',
+      emoji: '🎸',
+      value: 'feat'
     },
-    "fix": {
-      "description": "A bug fix",
-      "emoji": "🐛",
-      "value": "fix"
+    fix: {
+      description: 'A bug fix',
+      emoji: '🐛',
+      value: 'fix'
     },
-    "perf": {
-      "description": "A code change that improves performance",
-      "emoji": "⚡️",
-      "value": "perf"
+    perf: {
+      description: 'A code change that improves performance',
+      emoji: '⚡️',
+      value: 'perf'
     },
-    "refactor": {
-      "description": "A code change that neither fixes a bug or adds a feature",
-      "emoji": "💡",
-      "value": "refactor"
+    refactor: {
+      description: 'A code change that neither fixes a bug or adds a feature',
+      emoji: '💡',
+      value: 'refactor'
     },
-    "release": {
-      "description": "Create a release commit",
-      "emoji": "🏹",
-      "value": "release"
+    release: {
+      description: 'Create a release commit',
+      emoji: '🏹',
+      value: 'release'
     },
-    "style": {
-      "description": "Markup, white-space, formatting, missing semi-colons...",
-      "emoji": "💄",
-      "value": "style"
+    style: {
+      description: 'Markup, white-space, formatting, missing semi-colons...',
+      emoji: '💄',
+      value: 'style'
     },
-    "test": {
-      "description": "Adding missing tests",
-      "emoji": "💍",
-      "value": "test"
+    test: {
+      description: 'Adding missing tests',
+      emoji: '💍',
+      value: 'test'
     }
   }
 };
@@ -155,7 +135,7 @@ Using `--non-interactive` flag you can run `git-cz` non-interactive mode.
 
 For example:
 
-```
+```bash
 git-cz --non-interactive --type=feat --subject="add onClick prop to component"
 ```
 
@@ -169,21 +149,22 @@ CLI parameters:
 - `--issues`
 - `--lerna`
 
-## Disable Emoji 
+## Disable Emoji
+
 Using `--disable-emoji` flag will disable emoji.
 
 For example:
 
-```
+```bash
 git-cz --disable-emoji
 ```
 
 ## Commit message format
 
-* A commit message consists of a **header**, **body** and **footer**.
-* The header has a **type** and a **subject**:
+- A commit message consists of a **header**, **body** and **footer**.
+- The header has a **type** and a **subject**:
 
-```
+```bash
 <type>[(<scope>)]: <emoji> <subject>
 [BLANK LINE]
 [body]
@@ -201,6 +182,15 @@ Any other line should be limited to 72 character **[automatic wrapping]**
 
 This allows the message to be easier to read on GitHub as well as in various git tools.
 
+### Format
+
+By default the subject format is: `{type} {scope}: {subject}`
+
+Configuring the `format` field in `.git-cz.json` you can customize your own:
+
+- `{emoji} {type} {scope} {subject}`
+- `{type} {scope}: {emoji} {subject}`
+
 ### Type
 
 Must be one of the following:
@@ -215,13 +205,12 @@ Must be one of the following:
 - `ci` &mdash; CI related changes
 - `perf` &mdash; A code change that improves performance
 
-
 ### Subject
 
 The subject contains succinct description of the change:
 
-* Use the imperative, present tense: "change" not "changed" nor "changes"
-* No dot (.) at the end.
+- Use the imperative, present tense: "change" not "changed" nor "changes"
+- No dot (.) at the end.
 
 ### Body
 
@@ -240,18 +229,16 @@ Select the packages the commit affected.
 
 The footer is the place to reference any tasks related to this commit.
 
-
-
 ## Why this Fork?
 
-```
+```bash
 npm i -g git-cz
 added 1 package in 0.612s
 ```
 
 Installs in 0.6s vs 31.1s.
 
-```
+```bash
 npm i -g mol-conventional-changelog
 added 345 packages in 31.076s
 ```
