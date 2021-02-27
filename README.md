@@ -68,7 +68,7 @@ Below is default config:
 ```js
 module.exports = {
   disableEmoji: false,
-  format: '{type} {scope}: {subject}',
+  format: '{type}{scope}: {emoji}{subject}',
   list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
   maxMessageLength: 64,
   minMessageLength: 3,
@@ -184,12 +184,12 @@ This allows the message to be easier to read on GitHub as well as in various git
 
 ### Format
 
-By default the subject format is: `{type} {scope}: {subject}`
+By default the subject format is: `{type}{scope}: {subject}`
 
 Configuring the `format` field in `.git-cz.json` you can customize your own:
 
-- `{emoji} {type} {scope} {subject}`
-- `{type} {scope}: {emoji} {subject}`
+- `{type}{scope}: {emoji}{subject}`
+- `{emoji}{scope} {subject}`
 
 ### Type
 

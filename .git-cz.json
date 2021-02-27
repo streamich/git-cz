@@ -1,4 +1,4 @@
 {
   "disableEmoji": false,
-  "format": "{emoji} {scope}: {subject}"
+  "format": "{type}{scope}: {emoji}{subject}"
 }
