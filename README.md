@@ -71,6 +71,8 @@ Below is default config:
 ```js
 module.exports = {
   "disableEmoji": false,
+  "closedIssuePrefix": "✅ ",
+  "closedIssueMessage": "Closes: ",
   "list": [
     "test",
     "feat",
