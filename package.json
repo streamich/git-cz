@@ -35,7 +35,7 @@
     "chai": "4.3.4",
     "chalk": "4.1.2",
     "commitizen": "4.2.4",
-    "eslint": "7.17.0",
+    "eslint": "7.32.0",
     "eslint-plugin-babel": "5.3.1",
     "eslint-plugin-filenames": "1.3.2",
     "eslint-plugin-import": "2.22.1",
