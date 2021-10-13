@@ -1,3 +1,17 @@
+# [4.8.0](https://github.com/streamich/git-cz/compare/v4.7.6...v4.8.0) (2021-10-13)
+
+
+### Bug Fixes
+
+* 🐛 give default value to prevent convert error ([c16df5d](https://github.com/streamich/git-cz/commit/c16df5dbaa6b8452d10877ff56c018419ec76fc6)), closes [#227](https://github.com/streamich/git-cz/issues/227)
+* better support for workspaces ([215b6c3](https://github.com/streamich/git-cz/commit/215b6c3e15f417512ed5f7fd5b47b29f440c85a3))
+
+
+### Features
+
+* 🎸 add "format" field to customize subject in commit msg [#81](https://github.com/streamich/git-cz/issues/81) ([5e998cf](https://github.com/streamich/git-cz/commit/5e998cf03193ab50d7c2530ee6268a2ed72ba44a))
+* 🎸️ format (custom message) ([6f0c828](https://github.com/streamich/git-cz/commit/6f0c828120adac11cb1bd80282b168f35b98d0b3))
+
 ## [4.7.6](https://github.com/streamich/git-cz/compare/v4.7.5...v4.7.6) (2020-12-07)
 
 
