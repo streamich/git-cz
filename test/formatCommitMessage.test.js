@@ -4,32 +4,15 @@ const formatCommitMessage = require('../lib/formatCommitMessage');
 
 const defaultConfig = {
   disableEmoji: false,
+  format: '{type}{scope}: {emoji}{subject}',
   breakingChangePrefix: '🧨 ',
   closedIssuePrefix: '✅ ',
   closedIssueMessage: 'Closes: ',
   commitMessageFormat: '<type><(scope)>: <emoji><subject>',
-  list: [
-    'test',
-    'feat',
-    'fix',
-    'chore',
-    'docs',
-    'refactor',
-    'style',
-    'ci',
-    'perf'
-  ],
+  list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
   maxMessageLength: 64,
   minMessageLength: 3,
-  questions: [
-    'type',
-    'scope',
-    'subject',
-    'body',
-    'breaking',
-    'issues',
-    'lerna'
-  ],
+  questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
   scopes: [],
   types: {
     chore: {
@@ -100,13 +83,7 @@ const defaultState = {
 };
 
 describe('formatCommitMessage()', () => {
-  it('formats correctly a basic message ("feat" type, emoji, and message)', () => {
-    const message = formatCommitMessage({...defaultState});
-
-    expect(message).to.equal('feat: 🎸 First commit');
-  });
-
-  it('does not include emoji, if emojis disabled in config', () => {
+  it('does not include emoji, if emojis disabled in config (no scope)', () => {
     const message = formatCommitMessage({
       ...defaultState,
       config: {
@@ -115,6 +92,57 @@ describe('formatCommitMessage()', () => {
       }
     });
 
-    expect(message).to.equal('feat: First commit');
+    expect(message).equal('feat: First commit');
+  });
+
+  it('does not include emoji, if emojis disabled in config (with scope)', () => {
+    const message = formatCommitMessage({
+      ...defaultState,
+      answers: {
+        ...defaultState.answers,
+        scope: 'init'
+      },
+      config: {
+        ...defaultConfig,
+        disableEmoji: true
+      }
+    });
+
+    expect(message).equal('feat(init): First commit');
+  });
+
+  it('does not include emoji, if emojis disabled in config (custom)', () => {
+    const message = formatCommitMessage({
+      ...defaultState,
+      answers: {
+        ...defaultState.answers,
+        scope: 'init'
+      },
+      config: {
+        ...defaultConfig,
+        format: '{subject} :{scope}{type}',
+        disableEmoji: true
+      }
+    });
+
+    expect(message).equal('First commit :(init)feat');
+  });
+
+  it('does not include emoji, if emojis disabled in config (dynamic custom)', () => {
+    const isDynamic = true;
+    const message = formatCommitMessage({
+      ...defaultState,
+      answers: {
+        ...defaultState.answers,
+        scope: 'init'
+      },
+      config: {
+        ...defaultConfig,
+        format: `{subject} :{scope}{type}${isDynamic && ' [skip ci]'}`,
+        disableEmoji: true
+      }
+    });
+
+    expect(message).equal('First commit :(init)feat [skip ci]');
   });
 });
