@@ -28,8 +28,8 @@
     "eslint": "eslint lib/*.js"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "5.0.1",
-    "@semantic-release/git": "9.0.1",
+    "@semantic-release/changelog": "6.0.0",
+    "@semantic-release/git": "10.0.0",
     "any-shell-escape": "0.1.1",
     "browserify": "17.0.0",
     "chai": "4.3.4",
@@ -54,7 +54,7 @@
     "mocha": "9.1.2",
     "pkg": "5.3.3",
     "rimraf": "3.0.2",
-    "semantic-release": "17.4.7",
+    "semantic-release": "18.0.0",
     "signale": "1.4.0",
     "spawncommand": "2.2.0",
     "word-wrap": "1.2.3"
