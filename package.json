@@ -1,6 +1,6 @@
 {
   "name": "git-cz",
-  "version": "4.5.0",
+  "version": "4.8.0",
   "description": "Semantic emojified git commit, git-cz.",
   "main": "dist/cz.js",
   "bin": {
