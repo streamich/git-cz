@@ -4,6 +4,9 @@
 
 ![image](https://user-images.githubusercontent.com/9773803/49760520-fa6c6f00-fcc4-11e8-84c4-80727f071487.png)
 
+Detailled documentation can be found in `docs` folder.  
+Else, you can follow links written down bellow.
+
 ## Installation
 
 All installation options are listed in this file: [installation](./docs/installation.md)  
@@ -19,35 +22,9 @@ npx git-cz -e
 
 Configuration details can be found in this file: [configuration](./docs/configuration.md)
 
-## Non-interactive mode
+## CLI flags
 
-Using `--non-interactive` flag you can run `git-cz` non-interactive mode.
-
-For example:
-
-```bash
-git-cz --non-interactive --type=feat --subject="add onClick prop to component"
-```
-
-CLI parameters:
-
-- `--type`
-- `--subject`
-- `--scope`
-- `--body`
-- `--breaking`
-- `--issues`
-- `--lerna`
-
-## Disable Emoji
-
-Using `--disable-emoji` flag will disable emoji.
-
-For example:
-
-```bash
-git-cz --disable-emoji
-```
+Flags can be found here: [cli flags](./docs/cli.md)
 
 ## Conventional commits
 
