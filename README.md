@@ -15,75 +15,9 @@ npx git-cz
 npx git-cz -e
 ```
 
-## Custom config
+## Configuration
 
-You can provide a custom configuration in a `changelog.config.js` file in your repo, or in any parent folder.
-git-cz will search for the closest config file.
-Below is default config:
-
-```js
-module.exports = {
-  disableEmoji: false,
-  format: '{type}{scope}: {emoji}{subject}',
-  list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
-  maxMessageLength: 64,
-  minMessageLength: 3,
-  questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
-  scopes: [],
-  types: {
-    chore: {
-      description: 'Build process or auxiliary tool changes',
-      emoji: '🤖',
-      value: 'chore'
-    },
-    ci: {
-      description: 'CI related changes',
-      emoji: '🎡',
-      value: 'ci'
-    },
-    docs: {
-      description: 'Documentation only changes',
-      emoji: '✏️',
-      value: 'docs'
-    },
-    feat: {
-      description: 'A new feature',
-      emoji: '🎸',
-      value: 'feat'
-    },
-    fix: {
-      description: 'A bug fix',
-      emoji: '🐛',
-      value: 'fix'
-    },
-    perf: {
-      description: 'A code change that improves performance',
-      emoji: '⚡️',
-      value: 'perf'
-    },
-    refactor: {
-      description: 'A code change that neither fixes a bug or adds a feature',
-      emoji: '💡',
-      value: 'refactor'
-    },
-    release: {
-      description: 'Create a release commit',
-      emoji: '🏹',
-      value: 'release'
-    },
-    style: {
-      description: 'Markup, white-space, formatting, missing semi-colons...',
-      emoji: '💄',
-      value: 'style'
-    },
-    test: {
-      description: 'Adding missing tests',
-      emoji: '💍',
-      value: 'test'
-    }
-  }
-};
-```
+Configuration details can be found in this file: [configuration](./docs/configuration.md)
 
 ## Non-interactive mode
 
@@ -179,7 +113,8 @@ Select the packages the commit affected.
 
 ### Breaking Changes
 
-**Breaking Changes** must start with the words `BREAKING CHANGE: `.
+**Breaking Changes** must start with the words  
+`BREAKING CHANGE: `.
 
 ### Footer
 
