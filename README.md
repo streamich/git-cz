@@ -4,59 +4,15 @@
 
 ![image](https://user-images.githubusercontent.com/9773803/49760520-fa6c6f00-fcc4-11e8-84c4-80727f071487.png)
 
-### Without installation
+## Installation
+
+All installation options are listed in this file: [installation](./docs/installation.md)  
+If you wish to use `git-cz`, you can use the following steps:
 
 ```shell
 npx git-cz
 # or
 npx git-cz -e
-```
-
-### Install globally standalone
-
-```shell
-npm install -g git-cz
-git-cz
-# or
-git-cz -e
-```
-
-### Install locally with Commitizen
-
-```shell
-npm install -g commitizen
-npm install --save-dev git-cz
-```
-
-`package.json`:
-
-```json
-{
-  "config": {
-    "commitizen": {
-      "path": "git-cz"
-    }
-  }
-}
-```
-
-run:
-
-```shell
-git cz
-```
-
-### Install globally with Commitizen
-
-```shell
-npm install -g commitizen git-cz
-commitizen init git-cz --save-dev --save-exact
-```
-
-run:
-
-```shell
-git cz
 ```
 
 ## Custom config
