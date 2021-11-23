@@ -111,6 +111,23 @@ describe('formatCommitMessage()', () => {
     expect(message).equal('feat(init): First commit');
   });
 
+  it('does not include emoji, if emojis disabled in config (with issues)', () => {
+    const message = formatCommitMessage({
+      ...defaultState,
+      answers: {
+        ...defaultState.answers,
+        issues: '#123'
+      },
+      config: {
+        ...defaultConfig,
+        disableEmoji: true,
+        format: '{issues} {type}: {subject}'
+      }
+    });
+
+    expect(message).equal('#123 feat: First commit');
+  });
+
   it('does not include emoji, if emojis disabled in config (custom)', () => {
     const message = formatCommitMessage({
       ...defaultState,
