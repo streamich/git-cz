@@ -4,7 +4,7 @@
     "es6": true,
     "node": true
   },
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaFeatures": {
       "experimentalObjectRestSpread": true,
@@ -13,11 +13,12 @@
       "jsx": true
     },
     "ecmaVersion": 2017,
-    "sourceType": "module"
+    "sourceType": "module",
+    "requireConfigFile": false
   },
   "plugins": [
     "no-use-extend-native",
-    "babel",
+    "@babel",
     "import",
     "jsdoc",
     "promise",
@@ -39,9 +40,9 @@
         "before": true
       }
     ],
-    "babel/new-cap": 0,
-    "babel/no-invalid-this": 2,
-    "babel/object-curly-spacing": [2, "never"],
+    "@babel/new-cap": 0,
+    "@babel/no-invalid-this": 2,
+    "@babel/object-curly-spacing": [2, "never"],
     "block-scoped-var": 2,
     "block-spacing": [2, "always"],
     "brace-style": [
@@ -140,7 +141,7 @@
         "allowObject": false
       }
     ],
-    "import/no-commonjs": 2,
+    "import/no-commonjs": "off",
     "import/no-deprecated": 1,
     "import/no-duplicates": 0,
     "import/no-dynamic-require": 2,
@@ -166,19 +167,12 @@
     "import/order": [
       2,
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index"
-        ],
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
         "newlines-between": "never"
       }
     ],
     "import/prefer-default-export": 0,
-    "import/unambiguous": 1,
+    "import/unambiguous": "off",
     "indent": [2, 2],
     "init-declarations": 0,
     "jsdoc/check-param-names": 1,
@@ -522,12 +516,7 @@
     "vars-on-top": 2,
     "wrap-iife": [2, "inside"],
     "wrap-regex": 0,
-    "yoda": 0,
-
-    "import/unambiguous": "off",
-    "import/no-commonjs": "off",
-    "promise/prefer-await-to-then": "off",
-    "strict": "off"
+    "yoda": 0
   },
   "settings": {
     "import/extensions": [".js"]
