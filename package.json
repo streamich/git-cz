@@ -54,7 +54,7 @@
     "mocha": "9.1.4",
     "pkg": "5.5.2",
     "rimraf": "3.0.2",
-    "semantic-release": "18.0.1",
+    "semantic-release": "19.0.2",
     "signale": "1.4.0",
     "spawncommand": "2.2.0",
     "word-wrap": "1.2.3"
