@@ -1,3 +1,15 @@
+# [4.9.0](https://github.com/streamich/git-cz/compare/v4.8.1...v4.9.0) (2022-05-14)
+
+
+### Bug Fixes
+
+* 🐛 Read git-cz config from package.json ([c72cfac](https://github.com/streamich/git-cz/commit/c72cfac5e730734c409ce4e28a3fc8c4d2d7554c))
+
+
+### Features
+
+* 🎸 support cjs config files ([4f2ebc5](https://github.com/streamich/git-cz/commit/4f2ebc5c5f9986e73184bd9d30698129cd561ae7))
+
 ## [4.8.1](https://github.com/streamich/git-cz/compare/v4.8.0...v4.8.1) (2022-05-14)
 
 
