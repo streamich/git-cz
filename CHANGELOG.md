@@ -1,3 +1,10 @@
+## [4.8.1](https://github.com/streamich/git-cz/compare/v4.8.0...v4.8.1) (2022-05-14)
+
+
+### Bug Fixes
+
+* 🐛 Fix COMMIT_EDITMSG in bare repositories ([008ee31](https://github.com/streamich/git-cz/commit/008ee3171c82563220417453b47ad520b5c2c114))
+
 # [4.8.0](https://github.com/streamich/git-cz/compare/v4.7.6...v4.8.0) (2021-10-13)
 
 
