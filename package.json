@@ -53,7 +53,7 @@
     "minimist": "1.2.7",
     "mocha": "10.2.0",
     "pkg": "5.8.0",
-    "rimraf": "3.0.2",
+    "rimraf": "4.0.4",
     "semantic-release": "19.0.5",
     "signale": "1.4.0",
     "spawncommand": "2.2.0",
