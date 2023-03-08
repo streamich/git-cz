@@ -52,7 +52,7 @@
     "jest": "28.1.3",
     "minimist": "1.2.8",
     "mocha": "10.2.0",
-    "pkg": "5.8.0",
+    "pkg": "5.8.1",
     "rimraf": "4.3.1",
     "semantic-release": "19.0.5",
     "signale": "1.4.0",
