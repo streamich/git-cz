@@ -57,7 +57,7 @@
     "semantic-release": "19.0.5",
     "signale": "1.4.0",
     "spawncommand": "2.2.0",
-    "word-wrap": "1.2.3"
+    "word-wrap": "1.2.4"
   },
   "husky": {
     "hooks": {
