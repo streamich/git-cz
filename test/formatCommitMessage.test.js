@@ -73,7 +73,7 @@ const defaultState = {
     body: '',
     breaking: '',
     issues: '',
-    lerna: '',
+    lerna: 'git-cz',
     scope: '',
     subject: 'First commit',
     type: 'feat'
@@ -144,5 +144,19 @@ describe('formatCommitMessage()', () => {
     });
 
     expect(message).equal('First commit :(init)feat [skip ci]');
+  });
+
+  it('does not include emoji, format within lerna config', () => {
+    defaultState.answers.scope = 'Lerna';
+    const message = formatCommitMessage({
+      ...defaultState,
+      config: {
+        ...defaultConfig,
+        format: '【{lerna}】{type}{scope}: {emoji}{subject}',
+        disableEmoji: true
+      }
+    });
+
+    expect(message).equal('【git-cz】feat(Lerna): First commit');
   });
 });

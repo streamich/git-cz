@@ -31,6 +31,7 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "any-shell-escape": "0.1.1",
+    "babel-eslint": "^10.1.0",
     "browserify": "17.0.0",
     "chai": "4.4.1",
     "chalk": "4.1.2",
