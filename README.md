@@ -125,16 +125,16 @@ module.exports = {
       emoji: '💍',
       value: 'test'
     },
-    messages: {
-      type: 'Select the type of change that you\'re committing:',
-      customScope: 'Select the scope this component affects:',
-      subject: 'Write a short, imperative mood description of the change:\n',
-      body: 'Provide a longer description of the change:\n ',
-      breaking: 'List any breaking changes:\n',
-      footer: 'Issues this commit closes, e.g #123:',
-      confirmCommit: 'The packages that this commit has affected\n',
-    },
-  }
+  },
+  messages: {
+    type: 'Select the type of change that you\'re committing:',
+    customScope: 'Select the scope this component affects:',
+    subject: 'Write a short, imperative mood description of the change:\n',
+    body: 'Provide a longer description of the change:\n ',
+    breaking: 'List any breaking changes:\n',
+    footer: 'Issues this commit closes, e.g #123:',
+    confirmCommit: 'The packages that this commit has affected\n',
+  },
 };
 ```
 
