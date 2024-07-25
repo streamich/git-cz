@@ -32,7 +32,7 @@
     "@semantic-release/git": "10.0.1",
     "any-shell-escape": "0.1.1",
     "browserify": "17.0.0",
-    "chai": "4.4.1",
+    "chai": "4.5.0",
     "chalk": "4.1.2",
     "commitizen": "4.3.0",
     "eslint": "7.32.0",
