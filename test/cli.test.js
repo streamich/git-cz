@@ -20,7 +20,14 @@ test('git-cz --version', async () => {
 test('git-cz --non-interactive', async () => {
   const {getResult} = runCLI(['--non-interactive', '--dry-run']);
 
+  const quote = process.platform === 'win32' ? '"' : '\'';
   const result = await getResult();
 
-  expect(result).toMatchSnapshot();
+  expect(result).toBe(`\
+Running in dry mode.
+Will execute command:
+git commit --file ${quote}.git/COMMIT_EDITMSG${quote}
+Message:
+chore: 🤖 automated commit
+`);
 });
