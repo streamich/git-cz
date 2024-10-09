@@ -41,7 +41,7 @@
     "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jest": "27.9.0",
     "eslint-plugin-jsdoc": "41.1.2",
-    "eslint-plugin-no-use-extend-native": "0.5.0",
+    "eslint-plugin-no-use-extend-native": "0.7.2",
     "eslint-plugin-promise": "6.6.0",
     "eslint-plugin-unicorn": "23.0.0",
     "fuzzy": "0.1.3",
