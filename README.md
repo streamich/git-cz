@@ -71,6 +71,7 @@ module.exports = {
   format: '{type}{scope}: {emoji}{subject}',
   list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
   maxMessageLength: 64,
+  maxScopeLength: 10,
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
   scopes: [],
