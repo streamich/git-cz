@@ -14,6 +14,7 @@ const defaultConfig = {
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
   scopes: [],
+  customScopeInput: false,
   types: {
     chore: {
       description: 'Build process or auxiliary tool changes',
