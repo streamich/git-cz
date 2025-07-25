@@ -2,6 +2,26 @@
 
 # git-cz
 
+**Semantic emojified git commit tool** - A lightweight, fast, and interactive CLI for creating standardized commit messages with emoji support.
+
+git-cz helps you write consistent, meaningful commit messages by guiding you through an interactive prompt that follows the [Conventional Commits](https://www.conventionalcommits.org/) specification. Each commit is enhanced with relevant emojis to make your git history more visual and engaging.
+
+## Why git-cz?
+
+- **🚀 Fast Installation**: Installs in ~0.6s vs 31s for similar tools
+- **📝 Consistent Commits**: Enforces semantic commit message standards
+- **🎨 Visual Enhancement**: Adds meaningful emojis to commit messages  
+- **⚡ Interactive & Non-interactive**: Works in both guided and automated modes
+- **🔧 Highly Configurable**: Customize types, scopes, formats, and more
+- **🤝 Tool Integration**: Works seamlessly with Commitizen and other tools
+- **📈 Better Git History**: Makes commit logs more readable and searchable
+
+Perfect for teams wanting to improve their commit message consistency and maintainers looking for better project history visualization.
+
+<img width="600" alt="git-cz demo" src="https://user-images.githubusercontent.com/9773803/49760520-fa6c6f00-fcc4-11e8-84c4-80727f071487.png">
+
+## Installation & Usage
+
 
 ### Without installation
 
