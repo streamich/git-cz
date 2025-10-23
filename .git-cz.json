@@ -1,4 +1,6 @@
 {
   "disableEmoji": false,
-  "format": "{type}{scope}: {emoji}{subject}"
+  "format": "{type}{scope}: {emoji}{subject}",
+  "customScopeInput": true,
+  "branchScopePattern": "NFS-\\d+"
 }

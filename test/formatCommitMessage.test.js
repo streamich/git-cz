@@ -1,5 +1,5 @@
 /* eslint-disable sort-keys */
-const {expect} = require('chai');
+const { expect } = require('chai');
 const formatCommitMessage = require('../lib/formatCommitMessage');
 
 const defaultConfig = {
@@ -11,9 +11,12 @@ const defaultConfig = {
   commitMessageFormat: '<type><(scope)>: <emoji><subject>',
   list: ['test', 'feat', 'fix', 'chore', 'docs', 'refactor', 'style', 'ci', 'perf'],
   maxMessageLength: 64,
+  maxScopeLength: 10,
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
   scopes: [],
+  customScopeInput: false,
+  branchScopePattern: null,
   types: {
     chore: {
       description: 'Build process or auxiliary tool changes',
@@ -144,5 +147,22 @@ describe('formatCommitMessage()', () => {
     });
 
     expect(message).equal('First commit :(init)feat [skip ci]');
+  });
+
+  it('does include custom scope, if custom scope enable in config', () => {
+    const message = formatCommitMessage({
+      ...defaultState,
+      answers: {
+        ...defaultState.answers,
+        scope: 'custom-scope'
+      },
+      config: {
+        ...defaultConfig,
+        disableEmoji: true,
+        customScopeInput: true
+      }
+    });
+
+    expect(message).equal('feat(custom-scope): First commit');
   });
 });
