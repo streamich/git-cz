@@ -16,6 +16,7 @@ const defaultConfig = {
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
   scopes: [],
   customScopeInput: false,
+  branchScopePattern: null,
   types: {
     chore: {
       description: 'Build process or auxiliary tool changes',
